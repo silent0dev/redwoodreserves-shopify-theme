@@ -1,0 +1,120 @@
+.ea-image-with-text .faq__each--accordion {
+    padding: 0;
+}
+
+.ea-image-with-text .summary__title {
+    font-size: 1.9rem;
+    color: #2c3c4c;
+    font-weight: bold;
+}
+
+.ea-image-with-text .details__content {
+    line-height: 1.5;
+    color: #535353;
+}
+
+.ea-image-with-text .details__content p:first-child {
+    margin-top: 0;
+}
+
+.ea-image-with-text .faq__each--accordion summary.closing__line {
+    padding-top: 0;
+}
+
+.ea-ImageAndText__title {
+    margin-bottom: 5rem;
+}
+
+.ea-image-with-text .image-with-text__content .button  {
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+}
+
+.faq-image-with-text.ea-image-with-text .image-with-text__content:first-child {
+    max-width: 896.4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product_metafield_types {
+    width: 100%;
+}
+
+.product_metafield_types .product-form__input {
+    margin-bottom: 2rem;
+}
+
+.product_metafield_types .product-form__input input[type='radio']+label {
+    min-width: calc(33% - 10px);
+}
+
+.product_metafield_types .terpene-bar {
+    width: calc(25% - 7px);
+    height: 1rem;
+    border-radius: 7px;
+    border: solid 1px #2c3c4c;
+    background-color: #2c3c4c;
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 2.2rem;
+}
+
+.product_metafield_types .terpene-bar:first-of-type {
+    width: calc(50% - 6px);
+}
+
+.product_metafield_types .terpene-bar .terpene-bar-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3rem;
+    font-size: 1.6rem;
+    color: #535353;
+}
+
+.product_metafield_types .terpene-bar.cbd-bar:first-of-type {
+    width: 100%;
+}
+
+.product_metafield_types .terpene-bar.cbd-bar .cbd-bar-text {
+    bottom: -4rem;
+}
+
+.product_metafield_types .terpene-bar.cbd-bar .cbd-bar-text::before {
+    content: '';
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 0 0 14px 0 rgba(128, 0, 32, 0.36);
+    background-color: #800020;
+    display: block;
+    margin: auto;
+    border-radius: 100px;
+    top: 5rem;
+}
+
+@media screen and (max-width: 749px) {
+    .ea-ImageAndText__title .title{
+        font-size: calc(var(--font-heading-scale) * 3.4rem);
+    }
+    .ea-image-with-text .summary__title {
+        font-size: 1.9rem;
+    }
+}
+
+
+.product_metafield_types .product-form__input input[type='radio']+label{
+    font-size: 1.8rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    text-align: center;
+    color: #535353;
+    border-color: #2c3c4c;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

@@ -1,0 +1,80 @@
+{
+  "sections": {
+    "16578652341aa756de": {
+      "type": "ea-image-banner",
+      "blocks": {
+        "165786523438dbbfa7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Redwood reserves<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "165786523438dbbfa7-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/lakepass_1_of_1_2x_7524eb65-9e6d-4298-89e4-a422a52beee9.png",
+        "image_overlay_opacity": 10,
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_background": "rgba(0,0,0,0)",
+        "main_color": "#ffffff",
+        "alt_color": "#ffffff",
+        "image_mobile": "shopify:\/\/shop_images\/lakepass_1_of_1_2x_7524eb65-9e6d-4298-89e4-a422a52beee9.png",
+        "mobile_content_alignment": "center",
+        "image_mobile_height": "medium",
+        "adapt_mobile_height_first_image": true,
+        "show_text_below": false,
+        "color_mobile_background": "rgba(0,0,0,0)",
+        "mobile_main_color": "#ffffff",
+        "mobile_alt_color": "#ffffff",
+        "mobile_top_p": 3,
+        "mobile_bottom_p": 3,
+        "mobile_side_p": 3,
+        "animation": "none"
+      }
+    },
+    "main": {
+      "type": "ea-main-blog",
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false,
+        "menu": "blog",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16578651942414c7bb": {
+      "type": "apps",
+      "blocks": {
+        "b3b66aa2-f476-4606-9b44-90e4026dd4c3": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "b3b66aa2-f476-4606-9b44-90e4026dd4c3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "16578652341aa756de",
+    "main",
+    "16578651942414c7bb"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "main-registration": {
+      "type": "es-register",
+      "settings": {
+        "page_image_create_lg": "shopify:\/\/shop_images\/Screenshot_2022-04-13_100719.png",
+        "m_top_lg": 10,
+        "m_bot_lg": 25,
+        "m_top_sm": 5,
+        "m_bot_sm": 5
+      }
+    }
+  },
+  "order": [
+    "main-registration"
+  ]
+}

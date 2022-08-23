@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main-login": {
+      "type": "es-login",
+      "settings": {
+        "desc_login": "Log into your account to manage orders, update subscriptions, and redeem rewards.",
+        "bottom_title": "",
+        "bottom_paragraph": "",
+        "bottom_btn_text": "",
+        "bottom_btn_url": "#",
+        "desc_reset": "Enter the email address associated with your account & we’ll email you a link to reset your password.",
+        "desc_create": "Creating an account makes it easy to manage orders, update subscriptions, and earn rewards.",
+        "create_bottom_text": "<p>By creating an account, I agree to receive reward program communications at the email address provided. View our <a href=\"#\" title=\"#\">Terms of Service<\/a> and <a href=\"#\" title=\"#\">Privacy Policy<\/a> for details<\/p>",
+        "m_top_lg": 10,
+        "m_bot_lg": 13,
+        "m_top_sm": 5,
+        "m_bot_sm": 5
+      }
+    }
+  },
+  "order": [
+    "main-login"
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "current": {
+    "colors_solid_button_labels": "#ffffff",
+    "colors_accent_1": "#2c3c4c",
+    "gradient_accent_1": "",
+    "colors_accent_2": "#800020",
+    "gradient_accent_2": "",
+    "colors_text": "#2c3c4c",
+    "colors_outline_button_labels": "#253746",
+    "colors_background_1": "#ffffff",
+    "gradient_background_1": "",
+    "colors_background_2": "#c5d1d3",
+    "gradient_background_2": "",
+    "type_header_font": "karla_n4",
+    "heading_scale": 100,
+    "type_body_font": "roboto_n4",
+    "body_scale": 100,
+    "page_width": 1400,
+    "spacing_sections": 0,
+    "spacing_grid_horizontal": 20,
+    "spacing_grid_vertical": 40,
+    "buttons_border_thickness": 2,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 40,
+    "buttons_shadow_opacity": 0,
+    "buttons_shadow_horizontal_offset": 0,
+    "buttons_shadow_vertical_offset": 4,
+    "buttons_shadow_blur": 5,
+    "variant_pills_border_thickness": 1,
+    "variant_pills_border_opacity": 55,
+    "variant_pills_radius": 8,
+    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_horizontal_offset": 0,
+    "variant_pills_shadow_vertical_offset": 4,
+    "variant_pills_shadow_blur": 5,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 55,
+    "inputs_radius": 8,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": 0,
+    "inputs_shadow_blur": 0,
+    "card_style": "card",
+    "card_image_padding": 0,
+    "card_text_alignment": "left",
+    "card_color_scheme": "background-1",
+    "card_border_thickness": 0,
+    "card_border_opacity": 10,
+    "card_corner_radius": 10,
+    "card_shadow_opacity": 0,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 4,
+    "card_shadow_blur": 5,
+    "text_boxes_border_thickness": 0,
+    "text_boxes_border_opacity": 10,
+    "text_boxes_radius": 0,
+    "text_boxes_shadow_opacity": 0,
+    "text_boxes_shadow_horizontal_offset": 0,
+    "text_boxes_shadow_vertical_offset": 4,
+    "text_boxes_shadow_blur": 5,
+    "media_border_thickness": 1,
+    "media_border_opacity": 5,
+    "media_radius": 20,
+    "media_shadow_opacity": 0,
+    "media_shadow_horizontal_offset": 0,
+    "media_shadow_vertical_offset": 4,
+    "media_shadow_blur": 5,
+    "popup_border_thickness": 1,
+    "popup_border_opacity": 10,
+    "popup_corner_radius": 0,
+    "popup_shadow_opacity": 0,
+    "popup_shadow_horizontal_offset": 0,
+    "popup_shadow_vertical_offset": 4,
+    "popup_shadow_blur": 5,
+    "drawer_border_thickness": 1,
+    "drawer_border_opacity": 10,
+    "drawer_shadow_opacity": 0,
+    "drawer_shadow_horizontal_offset": 0,
+    "drawer_shadow_vertical_offset": 4,
+    "drawer_shadow_blur": 5,
+    "badge_position": "top right",
+    "badge_corner_radius": 6,
+    "sale_badge_color_scheme": "accent-1",
+    "sold_out_badge_color_scheme": "inverse",
+    "accent_icons": "text",
+    "social_twitter_link": "https:\/\/twitter.com\/redwoodreserves\/",
+    "social_facebook_link": "https:\/\/www.facebook.com\/RedwoodReserves\/",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/redwoodreserves\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/redwoodreserves\/",
+    "social_tiktok_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/redwoodreserves\/",
+    "social_vimeo_link": "",
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "currency_code_enabled": false,
+    "cart_drawer_collection": "cart",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Orders placed before 12 pm PST are shipped out same day!",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {}
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "10f3686e-2dfd-4725-8429-689d5ac6d8aa": {
+            "type": "text",
+            "settings": {
+              "heading": "Customer Care",
+              "subtext": "<p>Need help? We’re here for you, and ready to answer your questions.<\/p>"
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Products",
+              "menu": "products"
+            }
+          },
+          "910a3c59-23c9-46c2-87e4-d0a9b1898a64": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Company",
+              "menu": "company"
+            }
+          },
+          "7eb4becf-13aa-4698-af0f-11e13830ad62": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Policies",
+              "menu": "policies"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "All about CBD",
+              "menu": "all-about-cbd"
+            }
+          }
+        },
+        "block_order": [
+          "10f3686e-2dfd-4725-8429-689d5ac6d8aa",
+          "footer-1",
+          "910a3c59-23c9-46c2-87e4-d0a9b1898a64",
+          "7eb4becf-13aa-4698-af0f-11e13830ad62",
+          "footer-0"
+        ],
+        "settings": {
+          "color_scheme": "background-2",
+          "newsletter_enable": true,
+          "newsletter_heading": "Oh hey—Let’s be inbox friends",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false,
+          "margin_top": 0,
+          "padding_top": 48,
+          "padding_bottom": 0
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "logo_max_width": 100,
+          "color_scheme": "background-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "ea-announcement-bar": {
+        "type": "ea-announcement-bar",
+        "blocks": {
+          "ea-announcement-bar-0": {
+            "type": "ea-announcement",
+            "settings": {
+              "text": "Orders placed before 12 pm PST are shipped out same day! Free shipping on orders $75+.",
+              "color_background": "#1f2a33",
+              "text_color": "#ffffff",
+              "text_hover_color": "#ffffff",
+              "link": "",
+              "menu": "top-bar"
+            }
+          }
+        },
+        "block_order": [
+          "ea-announcement-bar-0"
+        ],
+        "settings": {}
+      },
+      "ea-header": {
+        "type": "ea-header",
+        "blocks": {
+          "df73f383-fee0-4e43-8aef-ef2df9ce9508": {
+            "type": "mega_menu",
+            "settings": {
+              "mega_menu_color_background": "#ffffff",
+              "mega_menu_text_color": "#253746",
+              "mega_menu_text_hover_color": "#800020",
+              "parent": "CBD Cigarettes",
+              "sub_menu_title": "",
+              "sub_menu_label": "",
+              "sub_menu_link": "shopify:\/\/products\/cbd-cigarettes-original",
+              "images_title": "",
+              "product__1": "",
+              "image__1": "shopify:\/\/shop_images\/shopcbdcigarettes_2x_97fbc5c1-f6df-439c-be11-b3eac8cf19f3.png",
+              "title__1": "CBD Cigarettes",
+              "link__1": "shopify:\/\/products\/cbd-cigarettes-original",
+              "product__2": "",
+              "image__2": "shopify:\/\/shop_images\/shopcbdflower_2x_f99a7a6d-52a7-4cde-9b75-3ad41e215616.png",
+              "title__2": "Menthol CBD Cigarettes",
+              "link__2": "shopify:\/\/products\/cbd-cigarettes-menthol",
+              "product__3": "",
+              "title__3": "",
+              "link__3": ""
+            }
+          },
+          "cd88e660-c9c2-4ea5-8348-9f8989d4d59e": {
+            "type": "mega_menu",
+            "settings": {
+              "mega_menu_color_background": "#ffffff",
+              "mega_menu_text_color": "#253746",
+              "mega_menu_text_hover_color": "#800020",
+              "parent": "CBD Pre Rolls",
+              "sub_menu_title": "",
+              "sub_menu_label": "",
+              "sub_menu_link": "",
+              "images_title": "",
+              "product__1": "original-cbd-pre-rolls",
+              "image__1": "shopify:\/\/shop_images\/shopcbdprerolls_2x_6c022b36-6655-473f-9180-5c61d8e4131d.png",
+              "title__1": "",
+              "link__1": "",
+              "product__2": "calm-cbd-pre-rolls",
+              "title__2": "",
+              "link__2": "",
+              "product__3": "focus-cbd-pre-rolls",
+              "title__3": "",
+              "link__3": ""
+            }
+          },
+          "b332d74b-7ec5-44fe-9258-27dc72ddb366": {
+            "type": "mega_menu",
+            "settings": {
+              "mega_menu_color_background": "#ffffff",
+              "mega_menu_text_color": "#253746",
+              "mega_menu_text_hover_color": "#800020",
+              "parent": "CBD Flower",
+              "sub_menu_title": "",
+              "sub_menu_label": "",
+              "sub_menu_link": "",
+              "images_title": "",
+              "product__1": "carolina-dream-cbd-flower",
+              "image__1": "shopify:\/\/shop_images\/shopcbdflower_2x_f99a7a6d-52a7-4cde-9b75-3ad41e215616.png",
+              "title__1": "",
+              "link__1": "",
+              "product__2": "golden-redwood-cbd-flower",
+              "title__2": "",
+              "link__2": "",
+              "product__3": "wild-bourbon-cbd-flower",
+              "title__3": "",
+              "link__3": ""
+            }
+          }
+        },
+        "block_order": [
+          "df73f383-fee0-4e43-8aef-ef2df9ce9508",
+          "cd88e660-c9c2-4ea5-8348-9f8989d4d59e",
+          "b332d74b-7ec5-44fe-9258-27dc72ddb366"
+        ],
+        "settings": {
+          "color_background": "#ffffff",
+          "text_color": "#2c3c4c",
+          "text_hover_color": "#800020",
+          "svg_logo": "",
+          "logo": "shopify:\/\/shop_images\/Redwood_logo_WHITE_transparent.png",
+          "logo_width": 230,
+          "logo_position": "top-center",
+          "menu": "main-menu",
+          "menu_type_desktop": "mega",
+          "enable_search": false,
+          "show_line_separator": true,
+          "enable_sticky_header": true,
+          "header_button_text": "Save 20%",
+          "header_button_url": "\/collections\/all",
+          "margin_bottom": 0,
+          "svg_logo_mobile": "",
+          "logo_mobile": "shopify:\/\/shop_images\/Image_545_2x_2b21cf5a-700a-4527-91f0-441118f19aac.png",
+          "mobile_menu": "main-menu-mobile",
+          "mobile_color_background": "#f7f5ee",
+          "mobile_text_color": "#253746",
+          "mobile_text_hover_color": "#800020",
+          "images_title": "",
+          "product__1": "",
+          "title__1": "",
+          "link__1": "",
+          "product__2": "",
+          "title__2": "",
+          "link__2": "",
+          "product__3": "",
+          "title__3": "",
+          "link__3": ""
+        }
+      },
+      "ea-footer": {
+        "type": "ea-footer",
+        "blocks": {
+          "bd35fa79-6f11-4566-9a5f-a4fb21328dff": {
+            "type": "text",
+            "settings": {
+              "heading": "Customer Care",
+              "subtext": "<p>Need help? We’re here for you, and ready to answer your questions.<\/p>",
+              "phone": "",
+              "email": "mailto:Hello@RedwoodReserves.com",
+              "subtext_2": "<p>Redwood Reserves<strong><br\/><\/strong>Portland, Oregon 97038<\/p>"
+            }
+          },
+          "dea4a545-fd23-4d88-a075-0a447b4db2eb": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Products",
+              "menu": "products"
+            }
+          },
+          "6c32ca25-5592-4846-b1ca-b981a1d75cea": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Company",
+              "menu": "company"
+            }
+          },
+          "d32734c4-d4de-4107-bb7d-59b7ea703067": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Policies",
+              "menu": "policies"
+            }
+          },
+          "9a819159-6905-4f53-b77a-b673fca891e2": {
+            "type": "link_list",
+            "settings": {
+              "heading": "All about CBD",
+              "menu": "all-about-cbd"
+            }
+          }
+        },
+        "block_order": [
+          "bd35fa79-6f11-4566-9a5f-a4fb21328dff",
+          "dea4a545-fd23-4d88-a075-0a447b4db2eb",
+          "6c32ca25-5592-4846-b1ca-b981a1d75cea",
+          "d32734c4-d4de-4107-bb7d-59b7ea703067",
+          "9a819159-6905-4f53-b77a-b673fca891e2"
+        ],
+        "settings": {
+          "color_scheme": "background-2",
+          "newsletter_enable": true,
+          "newsletter_heading": "Oh hey—Let’s be inbox friends",
+          "newsletter_p": "Sign up for offers & learn more about Redwood Reserves",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false,
+          "description": "<p>These products are not for use by or sale to persons under the age of 18. This product should be used only as directed on the label. It should not be used if you are pregnant or nursing. Consult with a physician before use if you have a serious medical condition or use prescription medications. A Doctor’s advice should be sought before using this and any supplemental dietary product. All trademarks and copyrights are the property of their respective owners and are not affiliated with nor do they endorse this product. These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. By using this site, you agree to follow the <a href=\"\/pages\/policy\" title=\"Policy\">Privacy Policy<\/a> and all <a href=\"\/pages\/terms\" title=\"Terms\">Terms & Conditions<\/a> printed on this site. Void Where Prohibited by Law.<\/p>",
+          "footer_image": "shopify:\/\/shop_images\/Redwood_trees_vector.png",
+          "footer_logo": "shopify:\/\/shop_images\/redwood-logo.png",
+          "margin_top": 0,
+          "padding_top": 48,
+          "padding_bottom": 0
+        }
+      },
+      "main-cart-items": {
+        "type": "main-cart-items",
+        "blocks": {
+          "63f44a55-ff2c-4528-8d83-cdc4245dee28": {
+            "type": "empty_links",
+            "settings": {
+              "title": "CBD Cigarettes",
+              "link": "shopify:\/\/collections\/cbd-cigarettes"
+            }
+          },
+          "0f3d2879-241f-4d6a-86b6-676cc5f02f57": {
+            "type": "empty_links",
+            "settings": {
+              "title": "CBD Pre Rolls",
+              "link": "shopify:\/\/collections\/cbd-pre-rolls"
+            }
+          },
+          "715ca58a-c8f8-4d33-9321-683c84bc6dd1": {
+            "type": "empty_links",
+            "settings": {
+              "title": "CBD Flower",
+              "link": "shopify:\/\/collections\/cbd-flower"
+            }
+          }
+        },
+        "block_order": [
+          "63f44a55-ff2c-4528-8d83-cdc4245dee28",
+          "0f3d2879-241f-4d6a-86b6-676cc5f02f57",
+          "715ca58a-c8f8-4d33-9321-683c84bc6dd1"
+        ],
+        "settings": {
+          "show_vendor": false,
+          "padding_top": 36,
+          "padding_bottom": 36,
+          "text": "<p>Orders placed before 12 pm PST are shipped out same day!<\/p>"
+        }
+      },
+      "main-cart-footer": {
+        "type": "main-cart-footer",
+        "blocks": {
+          "main-cart-footer-0": {
+            "type": "subtotal",
+            "settings": {}
+          },
+          "main-cart-footer-1": {
+            "type": "buttons",
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "main-cart-footer-0",
+          "main-cart-footer-1"
+        ],
+        "settings": {
+          "show_cart_note": false
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "733389323033596483": {
+        "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/theme-settings\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+        "disabled": false,
+        "settings": {
+          "show_preview_data": true
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "6174324309569838175": {
+        "type": "shopify:\/\/apps\/smile-rewards-loyalty\/blocks\/smile-shopify-app\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#ffffff",
+      "colors_accent_1": "#121212",
+      "gradient_accent_1": "",
+      "colors_accent_2": "#334fb4",
+      "gradient_accent_2": "",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#ffffff",
+      "gradient_background_1": "",
+      "colors_background_2": "#f3f3f3",
+      "gradient_background_2": "",
+      "type_header_font": "assistant_n4",
+      "heading_scale": 100,
+      "type_body_font": "assistant_n4",
+      "body_scale": 100,
+      "page_width": 1200,
+      "spacing_sections": 0,
+      "spacing_grid_horizontal": 8,
+      "spacing_grid_vertical": 8,
+      "buttons_border_thickness": 1,
+      "buttons_border_opacity": 100,
+      "buttons_radius": 7,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 4,
+      "buttons_shadow_blur": 5,
+      "variant_pills_border_thickness": 1,
+      "variant_pills_border_opacity": 55,
+      "variant_pills_radius": 40,
+      "variant_pills_shadow_opacity": 0,
+      "variant_pills_shadow_horizontal_offset": 0,
+      "variant_pills_shadow_vertical_offset": 4,
+      "variant_pills_shadow_blur": 5,
+      "inputs_border_thickness": 1,
+      "inputs_border_opacity": 55,
+      "inputs_radius": 0,
+      "inputs_shadow_opacity": 0,
+      "inputs_shadow_horizontal_offset": 0,
+      "inputs_shadow_vertical_offset": 4,
+      "inputs_shadow_blur": 5,
+      "card_style": "standard",
+      "card_image_padding": 0,
+      "card_text_alignment": "left",
+      "card_color_scheme": "background-2",
+      "card_border_thickness": 0,
+      "card_border_opacity": 10,
+      "card_corner_radius": 0,
+      "card_shadow_opacity": 0,
+      "card_shadow_horizontal_offset": 0,
+      "card_shadow_vertical_offset": 4,
+      "card_shadow_blur": 5,
+      "text_boxes_border_thickness": 0,
+      "text_boxes_border_opacity": 10,
+      "text_boxes_radius": 0,
+      "text_boxes_shadow_opacity": 0,
+      "text_boxes_shadow_horizontal_offset": 0,
+      "text_boxes_shadow_vertical_offset": 4,
+      "text_boxes_shadow_blur": 5,
+      "media_border_thickness": 1,
+      "media_border_opacity": 5,
+      "media_radius": 0,
+      "media_shadow_opacity": 0,
+      "media_shadow_horizontal_offset": 0,
+      "media_shadow_vertical_offset": 4,
+      "media_shadow_blur": 5,
+      "popup_border_thickness": 1,
+      "popup_border_opacity": 10,
+      "popup_corner_radius": 0,
+      "popup_shadow_opacity": 0,
+      "popup_shadow_horizontal_offset": 0,
+      "popup_shadow_vertical_offset": 4,
+      "popup_shadow_blur": 5,
+      "drawer_border_thickness": 1,
+      "drawer_border_opacity": 10,
+      "drawer_shadow_opacity": 0,
+      "drawer_shadow_horizontal_offset": 0,
+      "drawer_shadow_vertical_offset": 4,
+      "drawer_shadow_blur": 5,
+      "badge_position": "bottom left",
+      "badge_corner_radius": 40,
+      "sale_badge_color_scheme": "accent-2",
+      "sold_out_badge_color_scheme": "inverse",
+      "accent_icons": "text",
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tiktok_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": false,
+      "predictive_search_show_price": false,
+      "currency_code_enabled": true,
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "text": "Welcome to our store",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_width": 90,
+            "logo_position": "middle-left",
+            "menu": "main-menu",
+            "show_line_separator": true,
+            "enable_sticky_header": true,
+            "margin_bottom": 0
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Quick links",
+                "menu": "footer"
+              }
+            },
+            "footer-1": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Info",
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "text",
+              "settings": {
+                "heading": "Our mission",
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "color_scheme": "background-1",
+            "newsletter_enable": true,
+            "newsletter_heading": "Subscribe to our emails",
+            "show_social": true,
+            "enable_country_selector": false,
+            "enable_language_selector": false,
+            "payment_enable": true,
+            "margin_top": 48,
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        },
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "logo_max_width": 100,
+            "color_scheme": "background-1"
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        }
+      }
+    }
+  }
+}

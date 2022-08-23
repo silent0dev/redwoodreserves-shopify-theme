@@ -1,0 +1,406 @@
+.my-account {
+    background: #f1f7f7;
+    max-width: none;
+    margin: 0;
+    padding: 10rem 0 50rem;
+    background-position: 100% 80%;
+    background-size: 105%;
+    background-repeat: no-repeat;
+}
+
+.my-account a {
+    color: #800020;
+}
+
+.my-account .page-width {
+    max-width: 1070px;
+}
+
+.my-account .d-flex {
+    display: flex;
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+.my-account .my-account-menu {
+    width: 100%;
+    max-width: 26rem;
+    padding: 2rem 2rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+}
+
+.my-account .content {
+    width: 100%;
+    padding: 1.8rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+}
+
+.my-account-menu .account-h1 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.my-account-menu .account-h1 a{
+    color: #2c3c4c;
+    text-decoration: none;
+}
+
+.my-account-menu .goto ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.my-account-menu .goto ul .no-hover-link {
+    font-size: 16px;
+    color: #253746;
+    padding: 1.2rem 0;
+    display: block;
+    line-height: 1.5;
+    border-bottom: solid 1px #e2e2e2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.my-account-menu .goto ul .no-hover-link:hover,
+.my-account-menu .goto ul .no-hover-link.active {
+    color: #800020;
+}
+
+.my-account-menu .goto ul li:last-child .no-hover-link {
+    border-bottom: none;
+}
+
+.my-account .account-subtitle {
+    font-size: 19px;
+    font-weight: bold;
+    color: #2c3c4c;
+    margin-bottom: 0.5rem;
+}
+
+.my-account p {
+    font-size: 16px;
+    color: #535353;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+#customer_orders table {
+    margin-top: 1rem;
+    box-shadow: none;
+    text-align: left;
+    width: 100%;
+}
+
+#customer_orders table tr {
+    border-bottom: solid 1px #e2e2e2;
+}
+
+#customer_orders table th {
+    border: 0;
+    font-size: 16px;
+    color: #253746;
+}
+
+#customer_orders table td {
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+#customer_orders table td.date-td {
+    width: 1%;
+    white-space: nowrap;
+}
+
+#customer_orders table .head {
+    background: #edebeb;
+}
+
+#customer_orders table td:first-of-type a {
+    padding: 0;
+    box-shadow: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.my-account .customer.order {
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.order-single-header a {
+    float: right;
+}
+
+.order-single-header h2 {
+    color: #2c3c4c;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.order-single-header p {
+    font-size: 16px;
+}
+
+.order-single-address h2 {
+    color: #2c3c4c;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+table.order-details {
+    margin-top: 1rem;
+    box-shadow: none;
+    text-align: left;
+    width: 100%;
+}
+
+table.order-details tbody tr {
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.customer table.order-details tfoot tr td {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 1.2rem 0.5rem 0;
+}
+
+table.order-details tfoot tr:last-of-type td, table.order-details tfoot tr:last-of-type th {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+table.order-details tfoot tr td:first-of-type {
+    padding-left: 65%;
+}
+
+table.order-details th {
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #253746;
+    text-transform: none;
+    width: 100%;
+}
+
+table.order-details td {
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    width: 100%;
+}
+
+table.order-details thead tr {
+    background: #edebeb;
+}
+
+table.order-details tbody td {
+    font-weight: normal;
+}
+
+table.order-details td:first-of-type a {
+    padding: 0;
+    box-shadow: none;
+    font-size: 16px;
+    font-weight: normal;
+    color: inherit;
+}
+
+table.order-details td:first-of-type a:hover {
+    box-shadow: none;
+}
+
+table.order-details thead th:nth-last-child(-n + 3), table.order-details td:nth-last-child(-n + 3) {
+    text-align: left;
+}
+
+.order-single-address strong {
+    font-weight: bold;
+}
+
+.order-single-address .sub-info {
+    margin-top: 0.5rem;
+}
+
+.order > div:nth-of-type(2) > div:first-of-type h2 ~ p:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.my-account [data-customer-addresses].customer:not(.account):not(.order) {
+    max-width: none;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 5rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 0;
+    transition: min-height 0.5s ease;
+}
+
+.my-account [data-customer-addresses] h1 {
+    margin: 0;
+    text-align: left;
+    font-size: 19px;
+}
+
+.my-account [data-customer-addresses] a {
+    float: right;
+}
+
+.my-account [data-address] {
+    text-align: left;
+    margin-top: 0.5rem;
+}
+
+.my-account [data-address] h2 {
+    text-align: left;
+    font-size: 1.9rem;
+    font-weight: bold;  
+    color: #2c3c4c;
+}
+
+.my-account [data-address] p:first-line {  
+    font-weight: bold;  
+}
+
+.my-account .addresses ul {  
+    margin-bottom: 3rem;
+}
+
+.my-account .addresses li[data-address] button {  
+    float: right;
+    width: auto;
+    margin: 0 1rem;
+    min-height: unset;
+    line-height: inherit;
+    color: #800020;
+    text-decoration: underline;
+    min-width: unset;
+    padding: 0;
+    text-underline-offset: 3px;
+    margin-top: -2rem;
+}
+
+.my-account .addresses li[data-address] button::before, .my-account .addresses li[data-address] button::after { 
+    content: none;
+}
+
+.my-account .addresses li[data-address] {
+    padding-bottom: 2rem;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.my-account .addresses div[data-address] button, .my-account .addresses div[data-address] button:after {
+    width: auto;
+    margin: 0;
+    border-radius: 25px;
+}
+
+.my-account .addresses li[data-address] .EditAddress, .my-account .addresses .NewAddress {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+}
+
+.my-account .addresses li[data-address] .EditAddress input, .my-account .addresses .NewAddress input {
+    margin: 0;
+}
+
+.my-account .addresses [aria-expanded='false'] + div[id] {
+  display: none;
+}
+
+.my-account .addresses [aria-expanded='true'] + div[id] {
+  display: block;
+}
+
+.DeleteAddressModel {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.DeleteAddressModel:before {
+    content: '';
+    position: absolute;
+    background-color: #26374580;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+}
+
+.DeleteAddressModel .ModelBody {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 383px;
+    background: #fff;
+    padding: 3.8rem 4.1rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.06);
+}
+
+.DeleteAddressModel .ModelBody h5 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #2c3c4c;
+    margin: 0;
+}
+
+.my-account .addresses li[data-address] .DeleteAddressModel .ModelBody button {
+    float: none;
+    width: 85px;
+    background-color: #2c3c4c;
+    padding: 0.2rem 2.7rem;
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 989px) {
+    .my-account {
+        padding-top: 5rem;
+        padding-bottom: 20rem;
+        background-position: bottom;
+        background-size: contain;
+    }
+
+    .my-account .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .my-account .my-account-menu {
+        max-width: 100%;
+    }
+
+    .my-account .content>.grid {
+        gap: 1rem;
+    }
+
+    #customer_orders {
+        overflow: auto;
+        width: 100%;
+    }
+
+    #customer_orders table {
+        min-width: 60rem;
+        background: #fff;
+        overflow: auto;
+    }
+}

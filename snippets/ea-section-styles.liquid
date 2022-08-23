@@ -1,0 +1,26 @@
+{% assign set = section.settings %}
+<style>
+  #shopify-section-{{ section.id }} {% if internalElement %}{{ internalElement }}{% endif %} {
+    padding: {{ set.padding_top }}px 0 {{ set.padding_bottom }}px;
+    background-color: {{ set.sectionbg }};
+    {% if set.sectionbg_second != blank %}position: relative;{% endif %}
+  }
+  @media (max-width: 989px) {
+    #shopify-section-{{ section.id }} {% if internalElement %}{{ internalElement }}{% endif %} {
+      padding: {{ set.ptop_mob }}px 0 {{ set.pbottom_mob }}px;
+    }
+  }
+  {% if set.sectionbg_second != blank %}
+  #shopify-section-{{ section.id }}:before {
+    background: {{ set.sectionbg_second }};
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    content: "";
+  }
+  {% endif %}
+
+  {% if customStyles %}{{ customStyles }}{% endif %}
+</style>

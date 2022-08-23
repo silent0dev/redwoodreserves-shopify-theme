@@ -1,0 +1,572 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-info-image-slider.css' | asset_url | stylesheet_tag }}
+
+{% render 'ea-section-styles', section: section, internalElement: '.collection' %}
+
+{%- style -%}
+#InfoImageSlider-{{ section.id }} {
+  background-image: linear-gradient(to bottom, #f8f8f8, #fff);
+}
+{%- endstyle -%}
+
+<div id="InfoImageSlider-{{ section.id }}" class="collection {% if section.settings.layout == 'full_width' %} page-full-width{% else %} page-width{% endif %}">
+  <div>
+    {%- unless section.settings.main_heading == blank -%}
+      <div class="info-image-slider__title-wrapper title-wrapper--no-top-margin">
+        <h2 class="info-image-slider__title {{ section.settings.heading_size }}">{{ section.settings.main_heading }}</h2>
+      </div>
+    {%- endunless -%}
+  </div>  
+  <div class="info-image-slider__main-content">
+      <div class="info-image-slider__text-item grid__item">
+          <div id="ImageWithText--{{ section.id }}" class="info-image-slider__content info-image-slider__content--{{ section.settings.desktop_content_position }} info-image-slider__content--desktop-{{ section.settings.desktop_content_alignment }} info-image-slider__content--mobile-{{ section.settings.mobile_content_alignment }} info-image-slider__content--{{ section.settings.height }} color-{{ section.settings.color_scheme }}">
+            {%- for block in section.blocks -%}
+              {% case block.type %}
+                {%- when 'reviews_count' -%}
+                <div class="info-image-slider__rating-info">
+                  <span class="info-image-slider__rating-stars">{% render 'icon-rating-stars-full' %}</span>
+                  <span class="info-image-slider__rating-count">{{ block.settings.reviews_count_text }}</span>
+                </div>
+                {%- when 'heading' -%}
+                  {% if block.settings.pretitle != blank %}
+                  <span class="info-image-slider__pretitle pretitle {% if block.settings.pretitle == blank %} pretitle--no-heading{% endif %}">
+                    {{ block.settings.pretitle | escape }}
+                  </span>
+                  {% endif %}
+                  {% if block.settings.heading != blank %}
+                  <h2 class="info-image-slider__heading {{ block.settings.heading_size }} title" {{ block.shopify_attributes }}>
+                    {{ block.settings.heading | escape }}
+                  </h2>
+                  {% endif %}
+                  {% if block.settings.subtitle != blank %}
+                  <h3 class="info-image-slider__subtitle subtitle{% if block.settings.subtitle == blank %} subtitle--no-heading{% endif %}">
+                    {{ block.settings.subtitle | escape }}
+                  </h3>
+                  {% endif %}
+                {%- when 'caption' -%}
+                  <p class="info-image-slider__text info-image-slider__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.caption | escape }}</p>
+                {%- when 'icontextlist' -%}
+                <div class="info-image-slider__icontextlist">
+                  {% if block.settings.svgtext != blank %}
+                    <div class="iconimage">{{ block.settings.svgtext }}</div>
+                  {% else %}
+                    {% if block.settings.iconimage != blank %}
+                      <div class="iconimage">
+                        <img
+                        src="{{ block.settings.iconimage | image_url: width: 50 }}"
+                        alt="{{ block.settings.iconimage.alt | escape }}"
+                        loading="lazy"
+                        width="{{ block.settings.iconimage.width }}"
+                        height="{{ block.settings.iconimage.height }}"
+                      >
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                  <p class="info-image-slider__text info-image-slider__text--icon-text">{{ block.settings.icontext | escape }}</p>
+                </div>
+                {%- when 'text' -%}
+                  <div class="info-image-slider__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+                {%- when 'button' -%}
+                  {%- if block.settings.button_label != blank -%}
+                    <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="small-hide  medium-hide button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+                      {{ block.settings.button_label | escape }}
+                    </a>
+                  {%- endif -%} 
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
+      </div>
+
+      <div class="slider-container info-image-slider-container">
+        <ea-slideshow-component style="display: block;"  id="SliderWrap-{{ section.id }}">
+            <ul id="Slider-{{ section.id }}" class="info-image-slider_slides grid grid--3-col
+            grid--2-col-tablet grid--2-col-desktop grid--3-col-extra-wide
+            slide-height--{{ section.settings.height }}
+            negative-margin--small"
+            data-autoplay="{{ section.settings.auto_rotate }}"
+            data-speed="{{ section.settings.change_slides_speed }}"
+            role="list"
+            id="image-slider-box">
+            {% assign image_count = 0 %}
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {%- when 'slide_image' -%}
+                    {% assign image_count = image_count | plus: 1 %}
+                    <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="info-image-slider_slide grid__item product-slider slideshow__slide" 
+                    data-slide-index="{{ forloop.index }}">
+                      {%- if block.settings.image != blank -%}
+                          <img
+                          srcset="{%- if block.settings.image.width >= 165 -%}{{ block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                              {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                              {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
+                              {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
+                              {%- if block.settings.image.width >= 1070 -%}{{ block.settings.image | image_url: width: 1070 }} 1070w,{%- endif -%}
+                              {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                              {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
+                          src="{{ block.settings.image | image_url: width: 1500 }}"
+                          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                          alt="{{ block.settings.image.alt | escape }}"
+                          loading="lazy"
+                          width="{{ block.settings.image.width }}"
+                          height="{{ block.settings.image.height }}"
+                          >
+                   
+                    {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                    </li>
+                {%- endcase -%}
+            {%- endfor -%}
+            </ul>
+
+            {%- if image_count > 2 -%}
+            <div class="slider-buttons no-js-hidden {% if image_count < 3 %} small-hide{% endif %} slider-counter-type--{{ section.settings.slider_visual }}">
+              <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">{% render 'icon-ea-arrow-slide-left' %}</button>
+              <div class="slider-counter slider-counter--{{ section.settings.slider_visual }}{% if section.settings.slider_visual == 'counter' or section.settings.slider_visual == 'numbers' %} caption{% endif %}">
+                {%- if section.settings.slider_visual == 'counter' -%}
+                {%- comment -%}
+                  <span class="slider-counter--current">1</span>
+                  <span aria-hidden="true"> / </span>
+                  <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+                  <span class="slider-counter--total">{{ section.blocks.size }}</span>
+                 {%- endcomment -%} 
+                {%- else-%}
+                  <div class="slideshow__control-wrapper">
+                    {% assign limit = section.blocks.size | minus: 1 %}
+                    {%- for block in section.blocks limit: limit -%}
+                      {% if block.type == 'slide_image' %}
+                        <button class="slider-counter__link slider-counter__link--{{ section.settings.slider_visual }} link" aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slider-{{ section.id }}">
+                          {%- if section.settings.slider_visual == 'numbers' -%}{{ forloop.index }}{% else %}<span class="dot"></span>{%- endif -%}
+                        </button>                     
+                      {% endif %}
+                    {%- endfor -%}
+                  </div>
+                {%- endif -%}
+              </div>
+              <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'sections.slideshow.next_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">{% render 'icon-ea-arrow-slide-right' %}</button>
+        
+            </div>
+{%- comment -%}
+            <div class="slideshow__controls slideshow__controls_mobile slider-buttons no-js-hidden large-up-hide">
+              <div class="slider-counter slider-counter-dots">
+                <div class="slideshow__control-wrapper">
+                  {%- for block in section.blocks limit: limit -%}
+                    {% if block.type == 'slide_image' %}
+                      <button class="slider-counter__link slider-counter__link--dots link" aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slider-{{ section.id }}">
+                        <span class="dot"></span>
+                      </button>  
+                    {%- endif -%}
+                  {%- endfor -%}
+                </div>
+              </div>
+
+              <div class="slideshow__swipe_text">
+                {% render 'icon-swipe' %}
+                {{ 'sections.slideshow.swipe_text' | t }}
+              </div>
+
+              {%- for block in section.blocks -%}
+                {% case block.type %}
+                  {%- when 'button' -%}
+                    {%- if block.settings.button_label != blank -%}
+                    <div class="slideshow__button_wrap">
+                      <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="slideshow__button button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+                        {{ block.settings.button_label | escape }}
+                      </a>
+                    </div>
+                    {%- endif -%} 
+                {%- endcase -%}
+              {%- endfor -%}
+            </div>{%- endcomment -%}
+            {%- endif -%}
+        </ea-slideshow-component>
+      </div>
+      <div class="btn-ctn center">
+        {%- for block in section.blocks -%}
+            {% if block.type == 'button' -%}
+                {%- if block.settings.button_label != blank -%}
+                  <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="large-up-hide button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+                    {{ block.settings.button_label | escape }}
+                  </a>
+                {%- endif -%} 
+            {%- endif -%} 
+        {%- endfor -%}
+      </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.info-image-slider.name",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width spaced-section--extra-padding section-info-image-slider",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "main_heading",
+      "label": "t:sections.info-image-slider.settings.main_heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "header",
+      "content": "Image settings"
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.info-image-slider.settings.height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.info-image-slider.settings.height.options__2.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.info-image-slider.settings.height.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.info-image-slider.settings.height.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_image_padding",
+      "default": false,
+      "label": "t:sections.info-image-slider.settings.add_image_padding.label"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "full_width",
+          "label": "t:sections.info-image-slider.settings.layout.options__1.label"
+        },
+        {
+          "value": "boxed",
+          "label": "t:sections.info-image-slider.settings.layout.options__2.label"
+        }
+      ],
+      "default": "full_width",
+      "label": "t:sections.info-image-slider.settings.layout.label"
+    },
+    {
+      "type": "select",
+      "id": "slider_visual",
+      "options": [
+        {
+          "value": "dots",
+          "label": "t:sections.info-image-slider.settings.slider_visual.options__2.label"
+        },
+        {
+          "value": "counter",
+          "label": "t:sections.info-image-slider.settings.slider_visual.options__1.label"
+        },
+        {
+          "value": "numbers",
+          "label": "t:sections.info-image-slider.settings.slider_visual.options__3.label"
+        }
+      ],
+      "default": "dots",
+      "label": "t:sections.info-image-slider.settings.slider_visual.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_rotate",
+      "label": "t:sections.info-image-slider.settings.auto_rotate.label",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "change_slides_speed",
+      "min": 3,
+      "max": 9,
+      "step": 2,
+      "unit": "s",
+      "label": "t:sections.info-image-slider.settings.change_slides_speed.label",
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "ptop_mob",
+      "label": "Top spacing mobile",
+      "min": 0,
+      "unit": "px",
+      "max": 200,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "pbottom_mob",
+      "label": "Bottom spacing mobile",
+      "min": 0,
+      "unit": "px",
+      "max": 200,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "sectionbg",
+      "label": "Section background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "sectionbg_gradient",
+      "label": "Section background gradient color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Info image slider"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.info-image-slider.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image with text",
+          "label": "t:sections.info-image-slider.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "default": "Subtitle",
+          "label": "t:sections.info-image-slider.blocks.heading.settings.subtitle.label"
+        },
+        {
+          "type": "text",
+          "id": "pretitle",
+          "default": "Pretitle",
+          "label": "t:sections.info-image-slider.blocks.heading.settings.pretitle.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.info-image-slider.blocks.heading.settings.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.info-image-slider.blocks.heading.settings.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.info-image-slider.blocks.heading.settings.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.info-image-slider.blocks.heading.settings.heading_size.label"
+        }
+      ]
+    },
+    {
+      "type": "caption",
+      "name": "t:sections.info-image-slider.blocks.caption.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "caption",
+          "default": "Add a tagline",
+          "label": "t:sections.info-image-slider.blocks.caption.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "subtitle",
+              "label": "t:sections.info-image-slider.blocks.caption.settings.text_style.options__1.label"
+            },
+            {
+              "value": "caption-with-letter-spacing",
+              "label": "t:sections.info-image-slider.blocks.caption.settings.text_style.options__2.label"
+            }
+          ],
+          "default": "caption-with-letter-spacing",
+          "label": "t:sections.info-image-slider.blocks.caption.settings.text_style.label"
+        },
+        {
+          "type": "select",
+          "id": "text_size",
+          "options": [
+            {
+              "value": "small",
+              "label": "t:sections.info-image-slider.blocks.caption.settings.caption_size.options__1.label"
+            },
+            {
+              "value": "medium",
+              "label": "t:sections.info-image-slider.blocks.caption.settings.caption_size.options__2.label"
+            },
+            {
+              "value": "large",
+              "label": "t:sections.info-image-slider.blocks.caption.settings.caption_size.options__3.label"
+            }
+          ],
+          "default": "medium",
+          "label": "t:sections.info-image-slider.blocks.caption.settings.caption_size.label"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.info-image-slider.blocks.text.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "t:sections.info-image-slider.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.info-image-slider.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.info-image-slider.blocks.text.settings.text_style.options__2.label"
+            }
+          ],
+          "default": "body",
+          "label": "t:sections.info-image-slider.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "icontextlist",
+      "name": "t:sections.info-image-slider.blocks.icontextlist.name",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "html",
+          "id": "svgtext",
+          "label": "t:sections.info-image-slider.blocks.icontextlist.settings.svgtext.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "iconimage",
+          "label": "t:sections.info-image-slider.blocks.icontextlist.settings.iconimage.label"
+        },
+        {
+          "type": "text",
+          "id": "icontext",
+          "default": "Add a text",
+          "label": "t:sections.info-image-slider.blocks.icontextlist.settings.icontext.label"
+        }
+      ]
+    },
+    {
+      "type": "reviews_count",
+      "name": "t:sections.info-image-slider.blocks.reviews_count.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "reviews_count_text",
+          "default": "Add a text",
+          "label": "t:sections.info-image-slider.blocks.reviews_count.settings.reviews_count_text.label"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:sections.info-image-slider.blocks.button.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:sections.info-image-slider.blocks.button.settings.button_label.label",
+          "info": "t:sections.info-image-slider.blocks.button.settings.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.info-image-slider.blocks.button.settings.button_link.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "t:sections.info-image-slider.blocks.button.settings.button_style_secondary.label"
+        }
+      ]
+    },
+    {
+      "type": "slide_image",
+      "name": "t:sections.info-image-slider.blocks.slide_image.name",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.info-image-slider.blocks.slide_image.settings.image.label"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

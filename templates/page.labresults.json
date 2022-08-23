@@ -1,0 +1,299 @@
+{
+  "sections": {
+    "herobanner": {
+      "type": "ea-image-banner",
+      "blocks": {
+        "d6b34b51-c010-4b5d-ab8e-b762b515fe94": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Discover craft<br\/>Cmd smokes<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "d6b34b51-c010-4b5d-ab8e-b762b515fe94"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Redwood_Reserves_-_cbd_hemp_cigarette_flower_buds_cbd_hemp_joints_best_weed_420.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_background": "rgba(0,0,0,0)",
+        "main_color": "rgba(0,0,0,0)",
+        "alt_color": "#ffffff",
+        "image_mobile": "shopify:\/\/shop_images\/calm_1_of_1_2x_30ae9cf7-da57-4ac1-9a71-0db1077c7437.png",
+        "mobile_content_alignment": "center",
+        "image_mobile_height": "medium",
+        "adapt_mobile_height_first_image": false,
+        "show_text_below": false,
+        "color_mobile_background": "rgba(0,0,0,0)",
+        "mobile_main_color": "#ffffff",
+        "mobile_alt_color": "rgba(0,0,0,0)",
+        "mobile_top_p": 3,
+        "mobile_bottom_p": 3,
+        "mobile_side_p": 3,
+        "animation": "none"
+      }
+    },
+    "1657718340c735dc36": {
+      "type": "ea-rich-text",
+      "blocks": {
+        "07cfbb9f-9fd5-449c-bf84-b4a330eda44d": {
+          "type": "repeated_content",
+          "settings": {
+            "heading": "Carolina Dream",
+            "text": "<p>Carolina Dream CBD flower can be found in our Carolina Dream CBD Flower and Calm CBD Pre-Roll.<\/p>",
+            "button_label": "View Lab Report",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0651\/0664\/1148\/files\/Carolina-Dream-2_2_22.pdf?v=1657726591",
+            "button_style_secondary": true
+          }
+        },
+        "72614066-e201-40c4-9831-e0d40c8fa72a": {
+          "type": "repeated_content",
+          "settings": {
+            "heading": "Golden Redwood",
+            "text": "<p>Golden Redwood CBD flower can be found in Golden Redwood CBD Flower and Original CBD Pre-Rolls.<\/p>",
+            "button_label": "View Lab Report",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0651\/0664\/1148\/files\/Golden-Redwood-2.1-2_2_22.pdf?v=1657726591",
+            "button_style_secondary": true
+          }
+        },
+        "7c672092-5c21-45ca-b66e-b15c95f6d20b": {
+          "type": "repeated_content",
+          "settings": {
+            "heading": "Wild Bourbon",
+            "text": "<p>Wild Bourbon CBD flower can be found in our Wild Bourbon CBD Flower and our Focus CBD Pre-Rolls.<\/p>",
+            "button_label": "View Lab Report",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0651\/0664\/1148\/files\/Wild-Bourbon-2.1-2_2_22.pdf?v=1657726591",
+            "button_style_secondary": true
+          }
+        },
+        "16577183405ec3d7bd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Lab Reports<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "16577183405ec3d7bd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe in creating a consistent, quality experience  All of our CBD flower products are third-party lab tested for purity and potency. Read our labs below.<\/p>"
+          }
+        },
+        "53e66c9d-312b-4b46-acd8-d8eb9c06350c": {
+          "type": "repeated_content",
+          "settings": {
+            "heading": "Redwood Reserves Original CBD Cigarettes",
+            "text": "<p>The Redwood Reserves CBD Flower blend can be found in our CBD Cigarette and CBD Loosie.<\/p>",
+            "button_label": "View Lab Report",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0651\/0664\/1148\/files\/Redwood-Reserves-Cigarettes-COA-2022.pdf?v=1657726591",
+            "button_style_secondary": true
+          }
+        },
+        "ff370b50-16bc-4a35-a4bb-b6b0301bae74": {
+          "type": "repeated_content",
+          "settings": {
+            "heading": "Redwood Reserves CBD Menthol Cigarettes",
+            "text": "<p>The Redwood Reserves CBD Flower blend can be found in our Menthol cigarettes and CBD loosie.<br\/><\/p>",
+            "button_label": "View Lab Report",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0651\/0664\/1148\/files\/Redwood-Reserves-Cigarettes-COA-2022.pdf?v=1657726591",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "07cfbb9f-9fd5-449c-bf84-b4a330eda44d",
+        "72614066-e201-40c4-9831-e0d40c8fa72a",
+        "7c672092-5c21-45ca-b66e-b15c95f6d20b",
+        "16577183405ec3d7bd-0",
+        "16577183405ec3d7bd-1",
+        "53e66c9d-312b-4b46-acd8-d8eb9c06350c",
+        "ff370b50-16bc-4a35-a4bb-b6b0301bae74"
+      ],
+      "settings": {
+        "color_background": "#f8f8f8",
+        "title_color": "#2c3c4c",
+        "text_color": "#253746",
+        "button_text_color": "#253746",
+        "button_background": "#ffffff",
+        "full_width": false,
+        "custom_css_class": "lab-results-rich-text",
+        "padding_top": 45,
+        "padding_bottom": 45,
+        "ptop_mob": 20,
+        "pbottom_mob": 0,
+        "animation": "none"
+      }
+    },
+    "featured-collections": {
+      "type": "ea-multicolumn",
+      "blocks": {
+        "165650940897c2a164-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_-2.jpg",
+            "svg_logo": "",
+            "title": "Shop CBD Cigarettes",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/cbd-cigarettes"
+          }
+        },
+        "165650940897c2a164-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_-1.jpg",
+            "svg_logo": "",
+            "title": "Shop CBD Flower",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/cbd-flower"
+          }
+        },
+        "165650940897c2a164-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_3641.jpg",
+            "svg_logo": "",
+            "title": "Shop CBD Pre Rolls",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/cbd-pre-rolls"
+          }
+        }
+      },
+      "block_order": [
+        "165650940897c2a164-0",
+        "165650940897c2a164-1",
+        "165650940897c2a164-2"
+      ],
+      "settings": {
+        "title": "Shop the Redwood Collection.",
+        "heading_size": "h0",
+        "card_background": "#ffffff",
+        "text_color": "#ffffff",
+        "text_hover_color": "#ffffff",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "button_label": "",
+        "button_link": "",
+        "section_type": "featured-collection",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 68,
+        "ptop_mob": 15,
+        "pbottom_mob": 20,
+        "sectionbg": "#ffffff",
+        "sectionbg_second": "",
+        "page_width": true,
+        "animation": "none"
+      }
+    },
+    "faq": {
+      "type": "ea-image-with-text",
+      "blocks": {
+        "29d8d37c-193d-4caf-b7ab-397e4dcd5b71": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What are CBD cigarettes?",
+            "text": "<p>CBD cigarettes (or hemp cigarettes) are a traditional cigarette alternative that takes your smoking experience to another level while helping you quit tobacco-filled cigarettes. Our CBD cigs are only rolled with hemp flower and contain no tobacco or nicotine. CBD smokes are: <\/p>",
+            "text-list": "<p>Rolled with only hemp flower <\/p><p>Completely free of tobacco, nicotine, or additives<\/p><p>An all-natural tobacco substitute and effective quit smoking aid <\/p><p>Non-intoxicating, with less than 0.3% ∆9 THC for a chill without the high<\/p>"
+          }
+        },
+        "cdf7001e-b409-4f49-87e6-e1896d2df2e2": {
+          "type": "accordion",
+          "settings": {
+            "heading": "CBD cigarettes vs tobacco cigarettes",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-list": ""
+          }
+        },
+        "fcc450c6-ee2f-48ef-b5c3-9ceef88e097f": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Do CBD Cigarettes Contain Nicotine?",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-list": ""
+          }
+        },
+        "7b574f26-96a2-4056-b631-2e99b12d76a3": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is Smoking CBD addictive?",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-list": ""
+          }
+        },
+        "08ae5718-c667-47b3-9d18-985039219276": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What are CBD Cigarettes made of?",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-list": ""
+          }
+        },
+        "f3fdcc80-4d12-4cb9-879d-0107c0dce785": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Benefits of CBD cigarettes",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-list": ""
+          }
+        },
+        "1656647090e77bde9c-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Visit our far page",
+            "button_link": "#",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "29d8d37c-193d-4caf-b7ab-397e4dcd5b71",
+        "cdf7001e-b409-4f49-87e6-e1896d2df2e2",
+        "fcc450c6-ee2f-48ef-b5c3-9ceef88e097f",
+        "7b574f26-96a2-4056-b631-2e99b12d76a3",
+        "08ae5718-c667-47b3-9d18-985039219276",
+        "f3fdcc80-4d12-4cb9-879d-0107c0dce785",
+        "1656647090e77bde9c-2"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "heading_size": "h0",
+        "image": "shopify:\/\/shop_images\/lakepass_1_of_1_2x_1a946b9b-abd4-4d7c-8386-23f911f344b5.png",
+        "remove_image": false,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "desktop_image_block_width": 50,
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left",
+        "padding_top": 70,
+        "padding_bottom": 105,
+        "ptop_mob": 40,
+        "pbottom_mob": 40,
+        "sectionbg": "#f8f8f8",
+        "combinebg": "no",
+        "animation": "none",
+        "custom_class": "faq-image-with-text"
+      }
+    }
+  },
+  "order": [
+    "herobanner",
+    "1657718340c735dc36",
+    "featured-collections",
+    "faq"
+  ]
+}

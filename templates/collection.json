@@ -1,0 +1,104 @@
+{
+  "sections": {
+    "1661242818beaa0adb": {
+      "type": "ea-image-banner",
+      "blocks": {
+        "16612428174c30d3f3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Shop All CBD<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "16612428174c30d3f3-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/tobias-tullius-RhjVGxILcqE-unsplash_2x_186c3a76-cdb8-401d-86ac-4d51023a9310.png",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_background": "transparent",
+        "main_color": "#ffffff",
+        "alt_color": "#ffffff",
+        "image_mobile": "shopify:\/\/shop_images\/tobias-tullius-RhjVGxILcqE-unsplash_2x_186c3a76-cdb8-401d-86ac-4d51023a9310.png",
+        "mobile_content_alignment": "center",
+        "image_mobile_height": "small",
+        "adapt_mobile_height_first_image": false,
+        "show_text_below": false,
+        "color_mobile_background": "transparent",
+        "mobile_main_color": "#ffffff",
+        "mobile_alt_color": "#ffffff",
+        "mobile_top_p": 0,
+        "mobile_bottom_p": 0,
+        "mobile_side_p": 0,
+        "animation": "none"
+      }
+    },
+    "ea-main-collection-product-grid": {
+      "type": "ea-main-collection-product-grid",
+      "blocks": {
+        "e6a08b0d-642a-4b91-9863-2ddf7fb89aac": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cbd-cigarettes",
+            "emphasize": false,
+            "collection_img": "shopify:\/\/shop_images\/Redwood_Reserves_-_cbd_hemp_cigarette_flower_buds_cbd_hemp_joints_best_weed_420.jpg",
+            "img_position": "right",
+            "text_align": "left",
+            "collection_title": "CBD Cigarettes",
+            "title_color": "#ffffff",
+            "mobile_title_color": "#2c3c4c"
+          }
+        },
+        "5e06da16-590d-43b7-84f1-b9495966a936": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cbd-flower",
+            "emphasize": false,
+            "collection_img": "shopify:\/\/shop_images\/Redwood_Reserves_-_best_cbd_smokeable_flower_hemp_flower_buds_nugs_potent.jpg",
+            "img_position": "right",
+            "text_align": "left",
+            "collection_title": "CBD Flower",
+            "title_color": "#ffffff",
+            "mobile_title_color": "#2c3c4c"
+          }
+        },
+        "79cd7711-d7bc-4690-ae47-bdc636788e27": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cbd-pre-rolls",
+            "emphasize": false,
+            "collection_img": "shopify:\/\/shop_images\/Redwood_Reserves_-_best_cbd_joints_legal_weed_cannabis_buds.jpg",
+            "img_position": "right",
+            "text_align": "left",
+            "collection_title": "CBD Pre Rolls",
+            "title_color": "#2c3c4c",
+            "mobile_title_color": "#2c3c4c"
+          }
+        }
+      },
+      "block_order": [
+        "e6a08b0d-642a-4b91-9863-2ddf7fb89aac",
+        "5e06da16-590d-43b7-84f1-b9495966a936",
+        "79cd7711-d7bc-4690-ae47-bdc636788e27"
+      ],
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "1661242818beaa0adb",
+    "ea-main-collection-product-grid"
+  ]
+}

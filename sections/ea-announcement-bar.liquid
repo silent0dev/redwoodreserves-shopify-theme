@@ -1,0 +1,154 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'ea-announcement' -%}
+    {%- style -%}
+    #EAAnnouncementBar-{{ section.id }} {
+      background: {{ block.settings.color_background }};
+      color: {{ block.settings.text_color }};
+    }
+
+    #EAAnnouncementBar-{{ section.id }} p,
+    #EAAnnouncementBar-{{ section.id }} .list-menu__item,
+    #EAAnnouncementBar-{{ section.id }}  .ea-announcement-bar__inline-menu li a {
+      color: {{ block.settings.text_color }};
+      text-decoration: none;
+    }
+
+    #EAAnnouncementBar-{{ section.id }} .ea-announcement-bar__link:hover .ea-announcement-bar__message,
+    #EAAnnouncementBar-{{ section.id }} .list-menu__item:hover,
+    #EAAnnouncementBar-{{ section.id }}  .ea-announcement-bar__inline-menu li a:hover {
+      color: {{ block.settings.text_hover_color }};
+      text-decoration: none;
+    }
+
+    {%- endstyle -%}
+    <div id="EAAnnouncementBar-{{ section.id }}" class="ea-announcement-bar__wrap small-hide">
+      <div class="ea-announcement-bar page-width" role="region" aria-label="{{ 'sections.header.ea-announcement' | t }}" {{ block.shopify_attributes }}>
+        {%- if block.settings.text != blank -%}
+          {%- if block.settings.link != blank -%}
+            <a href="{{ block.settings.link }}" class="ea-announcement-bar__link link link--text focus-inset animate-arrow">
+          {%- endif -%}
+              <p class="ea-announcement-bar__message h4">
+                {{ block.settings.text | escape }}
+                {%- if block.settings.link != blank -%}
+                  {% render 'icon-arrow' %}
+                {%- endif -%}
+              </p>
+          {%- if block.settings.link != blank -%}
+            </a>
+          {%- endif -%}
+        {%- endif -%}
+
+        {%- if block.settings.menu != blank -%}
+        <nav class="ea-announcement-bar__inline-menu" aria-label="ea-announcement-bar__inline-menu">
+          <ul class="list-menu list-menu--inline" role="list">
+            {%- for link in block.settings.menu.links -%}
+              <li>
+                {%- if link.links != blank -%}
+                  <details-disclosure>
+                    <details id="Details-ea-Announcement-Bar-Menu-{{ forloop.index }}">
+                      <summary class="ea-announcement-bar__menu-item list-menu__item link focus-inset">
+                        <span {%- if link.child_active %} class="ea-announcement-bar__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                        {% render 'icon-caret' %}
+                      </summary>
+                      <ul id="ea-Announcement-Bar-Menu-MenuList-{{ forloop.index }}" class="ea-announcement-bar__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
+                        {%- for childlink in link.links -%}
+                          <li>
+                            {%- if childlink.links == blank -%}
+                              <a href="{{ childlink.url }}" class="ea-announcement-bar__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                {{ childlink.title | escape }}
+                              </a>
+                            {%- else -%}
+                              <details id="Details-ea-Announcement-Bar-SubMenu-{{ forloop.index }}">
+                                <summary class="ea-announcement-bar__menu-item link link--text list-menu__item focus-inset caption-large">
+                                  {{ childlink.title | escape }}
+                                  {% render 'icon-caret' %}
+                                </summary>
+                                <ul id="ea-Announcement-Bar-Menu-SubMenuList-{{ forloop.index }}" class="ea-announcement-bar__submenu list-menu motion-reduce">
+                                  {%- for grandchildlink in childlink.links -%}
+                                    <li>
+                                      <a href="{{ grandchildlink.url }}" class="ea-announcement-bar__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                        {{ grandchildlink.title | escape }}
+                                      </a>
+                                    </li>
+                                  {%- endfor -%}
+                                </ul>
+                              </details>
+                            {%- endif -%}
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    </details>
+                  </details-disclosure>
+                {%- else -%}
+                  <a href="{{ link.url }}" class="ea-announcement-bar__menu-item ea-announcement-bar__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                    <span {%- if link.current %} class="ea-announcement-bar__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                  </a>
+                {%- endif -%}
+              </li>
+            {%- endfor -%}
+          </ul>
+        </nav>
+      {%- endif -%}
+      
+      </div>
+    </div>
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+{
+  "name": "t:sections.ea-announcement-bar.name",
+  "max_blocks": 12,
+  "blocks": [
+    {
+      "type": "ea-announcement",
+      "name": "t:sections.ea-announcement-bar.blocks.ea-announcement.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Welcome to our store",
+          "label": "t:sections.ea-announcement-bar.blocks.ea-announcement.settings.text.label"
+        },
+        {
+          "type": "color",
+          "id": "color_background",
+          "default": "transparent",
+          "label": "t:sections.ea-announcement-bar.blocks.ea-announcement.settings.color_background.label"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "default": "transparent",
+          "label": "t:sections.ea-announcement-bar.blocks.ea-announcement.settings.text_color.label"
+        },
+        {
+          "type": "color",
+          "id": "text_hover_color",
+          "default": "transparent",
+          "label": "t:sections.ea-announcement-bar.blocks.ea-announcement.settings.text_hover_color.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.ea-announcement-bar.blocks.ea-announcement.settings.link.label"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "default": "main-menu",
+          "label": "t:sections.header.settings.menu.label"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "ea-announcement"
+      }
+    ]
+  }
+}
+{% endschema %}

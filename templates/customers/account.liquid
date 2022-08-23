@@ -1,0 +1,87 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+{{ 'ea-account.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .my-account {
+    background-image: url( {{ 'michael-benz.png' | asset_url }} );
+  }
+</style>
+
+<div class="my-account account">
+  
+  <div class="page-width d-flex">
+  
+  {% render 'account_menu' %}
+  
+  <div class="content">
+      
+    <h1 class="account-subtitle">My Account</h1>
+    <p>From your dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</p>
+
+    <div class="grid grid--1-col-tablet-down grid--2-col-desktop">
+      <div class="grid__item">
+        <h3 class="account-subtitle">
+          Account Information
+        </h3>
+        <div>
+          <p>{{ customer.name }}</p>
+          <p>{{ customer.email }}</p>
+        </div>
+      </div>
+
+      <div class="grid__item">
+        <h3 class="account-subtitle">
+          Address Book
+        </h3>
+        
+        <div class="address note">
+          <p><a id="view_address" href="/account/addresses">Manage Addresses ({{ customer.addresses_count }})</a></p>
+          {% if customer.default_address != nil %}
+            <p>{{ customer.default_address.address1 }}</p>
+            {% if customer.default_address.address2 != "" %}
+              <p>{{ customer.default_address.address2 }}</p>
+            {% endif %}
+            <p>{{ customer.default_address.city}}, {% if address.province_code %}{{customer.default_address.province_code}}, {% endif %}{{customer.default_address.country}}</p>
+            <p>{{ customer.default_address.zip}}</p>
+            <p>{{ customer.default_address.phone }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    
+    <div id="customer_orders" class="orders">
+        <h3 class="account-subtitle">My orders</h3>
+      {% if customer.orders.size != 0 %}
+      <table>
+        <thead>
+          <tr class="head">
+            <th class="order_number first">Order</th>
+            <th class="date">Date</th>
+            <th class="payment_status">Status</th>
+            <th class="fulfillment_status">Fulfillment</th>
+            <th class="total">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for order in customer.orders %}
+          <tr class="{% cycle 'odd', 'even' %} {% if order.cancelled %}cancelled_order{% endif %}">
+            <td>{{ order.name | link_to: order.customer_url }}</td>
+            <td class="date-td"><span>{{ order.created_at | date: "%b %d, %Y" }}</span></td>
+            <td><span class="status_{{ order.financial_status }}">{{ order.financial_status }}</span></td>
+            <td><span class="status_{{ order.fulfillment_status }}">{{ order.fulfillment_status }}</span></td>
+            <td><span class="total money">{{ order.total_price | money }}</span></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+        <p>You haven't placed any orders yet.</p>
+      {% endif %}
+    </div>
+    
+   </div>
+    
+    
+  </div>
+    
+</div>

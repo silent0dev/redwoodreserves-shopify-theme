@@ -1,0 +1,200 @@
+.widget_title {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    line-height: 1.19;
+    color: #253746;
+    font-weight: bold;
+}
+
+.recharge-custom-container {
+    margin: 7px 0 25px 0;
+}
+
+.recharge-custom-container .recharge-radio + label {
+    border: solid 1px #8f979e;
+    border-radius: 7px;
+    padding: 1.5rem 2rem;
+    padding-left: 4rem;
+    position: relative;
+    display: block;
+    font-size: 1.9rem;
+    color: #263745;
+    font-size: 1.7rem;
+}
+
+@media screen and (min-width: 750px) {
+    .recharge-custom-container .recharge-radio + label {
+        border: solid 1px #8f979e;
+        border-radius: 7px;
+        padding: 1.5rem 2rem;
+        padding-left: 5.5rem;
+        position: relative;
+        display: block;
+        font-size: 1.9rem;
+        color: #263745;
+        font-size: 1.7rem;
+    }
+}
+
+
+.recharge-custom-container .recharge-radio:checked + label {
+    border-color: #c5d1d3;
+    background-color: #f8f8f8;
+}
+
+.recharge-radio + label .save-text {
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #2c3c4c;
+    vertical-align: middle;
+}
+
+.recharge-radio + label::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: solid 1px #c5d1d3;
+    border-radius: 50px;
+    left: 1rem;
+    top: 1.75rem;
+}
+
+@media screen and (min-width: 750px) {
+    .recharge-radio + label::before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border: solid 1px #c5d1d3;
+        border-radius: 50px;
+        left: 2rem;
+        top: 1.75rem;
+    }
+}
+ 
+.recharge-radio:checked + label::before {
+    background-color: #1a1a1a;
+}
+
+.recharge-price {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.compare-price{
+    font-size: 16px;
+    color: #707070;
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-right: 2px;
+}
+
+.recharge-onetime {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+#sub-type {
+    font-size: 1.4rem;
+}
+
+.sub-radio-cnt {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.sub-radio-cnt .select__select{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #535353;
+    position: relative;
+    height: 4rem;
+}
+
+#sub-type input[type=radio] + label{
+    flex-grow: 1;
+    padding: 5px 15px;
+    border-radius: 7px;
+    border: solid 1px #8f979e;
+    background-color: #fafafa;
+    font-size: 16px;
+    font-weight: 400;
+    color: #263745;
+}
+
+#sub-type input[type=radio]:checked + label{
+    border: solid 1px #263745;
+    background-color: #f3f4f6;
+    font-weight: 600;
+    color: #253746;
+}
+
+.recharge-dec-ul {
+    font-size: 1.2rem;
+}
+
+.recharge-dec-ul span {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.recharge-dec-ul span::before {
+    content: '';
+    width: 11px;
+    height: 13px;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    vertical-align: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 749px) {
+
+    .recharge-radio + label {
+        font-size: 1.6rem;
+    }
+
+    .recharge-custom-container {
+        padding: 0rem;
+    }
+
+    .recharge-radio + label {
+        padding-left: 3rem;
+        position: relative;
+        display: block;
+        font-size: 1.9rem;
+        color: #263745;
+        font-size: 1.7rem;
+    }
+
+    #subscribe-price {
+        width: 50px;
+    }
+
+    #sub-type input[type=radio] + label{
+        padding: 5px;
+    }
+}
+
+.recharge-custom-container .recharge-radio + label .label-cov {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--gradient-base-accent-1);
+    padding-top: 0.4rem
+}

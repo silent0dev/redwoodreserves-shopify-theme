@@ -1,0 +1,296 @@
+{
+  "sections": {
+    "herobanner": {
+      "type": "ea-image-banner",
+      "blocks": {
+        "8eab7d54-4ee4-4c30-9b0c-4b9bd1ab1754": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>FAQ's.<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "8eab7d54-4ee4-4c30-9b0c-4b9bd1ab1754"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Redwood_Reserves_-_cbd_hemp_cigarette_flower_buds_cbd_hemp_joints_best_weed_420.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_background": "rgba(0,0,0,0)",
+        "main_color": "rgba(0,0,0,0)",
+        "alt_color": "#ffffff",
+        "image_mobile": "shopify:\/\/shop_images\/Redwood_Reserves_-_cbd_hemp_cigarette_flower_buds_cbd_hemp_joints_best_weed_420.jpg",
+        "mobile_content_alignment": "center",
+        "show_text_below": false,
+        "color_mobile_background": "rgba(0,0,0,0)",
+        "mobile_main_color": "#ffffff",
+        "mobile_alt_color": "#ffffff",
+        "mobile_top_p": 3,
+        "mobile_bottom_p": 3,
+        "mobile_side_p": 3,
+        "animation": "split-slide"
+      }
+    },
+    "16575084028c0eccef": {
+      "type": "ea-faq",
+      "blocks": {
+        "16575084025edb2201-0": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Product Inquiries",
+            "title": "What are CBD cigarettes?",
+            "answer": "<p>CBD cigarettes (or hemp cigarettes) are a traditional cigarette alternative that takes your smoking experience to another level while helping you quit tobacco and nicotine. Our CBD cigs are rolled with only premium hemp flower and contain no tobacco or nicotine. CBD smokes are: <\/p>",
+            "text-list": "<p>Rolled with only hemp flower grown on our family farm<\/p><p>Completely free of tobacco, nicotine, or additives<\/p><p>An all-natural tobacco substitute and effective quit smoking aid <\/p><p>Non-intoxicating, with less than 0.3% THC for a chill without the high<\/p><p>Rich in beneficial cannabinoids like CBD (cannabidiol), CBG (cannabigerol) and CBC (cannabichromene)<\/p>"
+          }
+        },
+        "11859cf4-d46f-4eac-96b9-634e728f16ef": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Product Inquiries",
+            "title": "CBD cigarettes vs tobacco cigarettes",
+            "answer": "<p>CBD cigarettes (or hemp cigarettes) are a better alternative to tobacco cigarettes because they satisfy the urge to smoke with an additive, pesticide, and chemical free option. Unlike tobacco cigarettes, they undergo strict lab testing for pesticides, heavy metals, microbials, and toxins. They also pack a potent dose of CBD to help naturally wean your body off tobacco. CBD cigarettes are:<\/p>",
+            "text-list": "<p>Made with pure hemp flower<\/p><p>High in CBD to help block withdrawal symptoms<\/p><p>A better relaxation tool than tobacco<\/p>"
+          }
+        },
+        "8e436a4c-7fa8-479d-b957-d5f98d5201d6": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Product Inquiries",
+            "title": "What are your CBD cigarettes rolled with?",
+            "answer": "<p>Our CBD cigarettes are made with from small-batch and dry-aged CBD flower. Grown on our family farm with just the sun, water, and rich Oregon soil for an elevated smoking experience.<\/p>",
+            "text-list": "<p>Made with whole flower buds<\/p><p>Contains a cellulose acetate filter<\/p><p>Wrapped with rice paper<\/p>"
+          }
+        },
+        "119f46aa-5534-4340-b2c5-99d6999e20d9": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Product Inquiries",
+            "title": "What CBD flower strains are your CBD Cigarettes rolled with?",
+            "answer": "<p>Our CBD cigarettes are rolled with a rich blend of our three strains for a broader terpene profile and long lasting effect. <\/p>",
+            "text-list": "<p><strong>Golden Redwood<\/strong> : (Sour Tsunami x Cannatonic)<\/p><p> <strong>Carolina Dream<\/strong> : (Cannatonic x AC\/DC)<\/p><p><strong>Wild Bourbon<\/strong> : (AC\/DC x Sour Tsunami)<\/p>"
+          }
+        },
+        "834d9cfc-ac88-44dd-bd3b-16b48691d84b": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Product Inquiries",
+            "title": "Can you fail a drug test after smoking CBD flower?",
+            "answer": "<p>Because our CBD flower is naturally grown it contains a full range of other cannabinoids - including THC. Smoking CBD flower once is unlikely (but not impossible) to make you fail a drug test, but because cannabinoids build up in your system over time it's possible to build up enough THC to cause a failed drug test. <\/p>",
+            "text-list": "<p>Our CBD flower contains less than 0.3% THC<\/p><p>We don't recommend smoking CBD flower if you're anticipating a drug test <\/p>"
+          }
+        },
+        "62f28708-64c7-4726-8c85-91a94a83c903": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Product Inquiries",
+            "title": "Will CBD flower get me high?",
+            "answer": "<p>CBD flower is a perfect smoke for relaxing and unwinding, but it does not get you high. In order to be federally compliant, CBD flower must contain less than 0.3% THC. Compared to the 20-30% flower in recreational dispensaries, it's a much lower amount that will not get you high. <\/p>",
+            "text-list": "<p>Contains less than 0.3% THC<\/p><p>Relaxes and unwinds<\/p><p>Will not get you high<\/p>"
+          }
+        },
+        "81adf01a-70a9-4d91-a262-e7d49bbfca11": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Shipping Q's",
+            "title": "How fast do you take to ship my order?",
+            "answer": "<p>Most orders placed before 1pm PST ship the same day (Monday-Friday). We offer first class (2-7 business days) and priority mail (2-5 business days) shipping options. <\/p>",
+            "text-list": "<p>Most orders placed before 12pm PST are packed and shipped same day<\/p><p>Shipments are sent with first class or priority mail<\/p>"
+          }
+        },
+        "dc6ecbca-d9f4-4fa6-bc04-615f6af78920": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Shipping Q's",
+            "title": "What happens if my order doesn't arrive?",
+            "answer": "<p>No worries! We offer Route shipping insurance at checkout that covers your order in case it gets lost, stolen, or damaged during delivery. If you need to file a claim you can do so <a href=\"https:\/\/claims.route.com\" target=\"_blank\" title=\"https:\/\/claims.route.com\">here<\/a> and a Route agent will get back to you to replace or refund your order.<\/p>",
+            "text-list": "<p>Orders with shipping insurance are fully covered during delivery<\/p><p>Get a replacement or a refund if your package gets lost, stolen, or damaged <\/p>"
+          }
+        },
+        "7c98b6fd-5f50-4332-baed-792c6e2272f1": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Shipping Q's",
+            "title": "Are your shipping mailers discreet?",
+            "answer": "<p>Our mailers are discreet and contain no mention of CBD, hemp, or other identifying factors. Just our company name and your shipping info. <\/p>",
+            "text-list": "<p>Discreet mailers<\/p><p>Orders ship in bubble mailers or boxes depending on the size<\/p>"
+          }
+        },
+        "80d2dc80-83ad-44ed-af36-660e65ea2c55": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Shipping Q's",
+            "title": "How much does shipping cost?",
+            "answer": "<p>We offer free shipping on orders over $75. For smaller orders, we offer a flat rate for first class ($5) or priority shipping ($8.50).<\/p>",
+            "text-list": "<p>Additional shipping insurance is offered at checkout <\/p><p>Flat rate shipping fees for orders under $75<\/p>"
+          }
+        },
+        "0db699f4-52e6-4b49-a1d5-670724b1cfa3": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Shipping Q's",
+            "title": "Do you ship internationally?",
+            "answer": "<p>We currently only ship internationally to Brazil with a valid prescription. To learn more about purchasing CBD flower in Brazil click here.<\/p>",
+            "text-list": "<p>No shipping available for International countries except Brazil<\/p>"
+          }
+        },
+        "1dc467f6-f989-40f9-b584-b8b1b7299a49": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Refunds & Returns",
+            "title": "Do you offer refunds on products?",
+            "answer": "<p>We accept returns of unopened and unused products up to 14 days after delivery. If you want to initiate a return, send us a message at hello@redwoodreserves.com with the subject line \"return request\".<\/p>",
+            "text-list": "<p>Products must be unopened to initiate a refund<\/p><p>Customer is responsible for return shipping cost<\/p>"
+          }
+        },
+        "d9bd9f78-32ce-4491-b0e1-740630d3cdf7": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Refunds & Returns",
+            "title": "Can I exchange my order for something else?",
+            "answer": "<p>You can exchange any unopened and unused product within 14 days of delivery. If you want to exchange a product send our customer support team a message at hello@redwoodreserves.com for more info. <\/p>",
+            "text-list": "<p>We accept exchanges of unopened products<\/p><p>Customer is responsible for additional shipping fees<\/p>"
+          }
+        },
+        "e58cff8d-d71c-4b38-a874-e045f892c9cb": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Wholesale",
+            "title": "Do you offer wholesale pricing?",
+            "answer": "<p>We sure do. Fill out our wholesale application to be connected with a sales rep who can help. If you're already a customer and need help getting in contact with your rep, send us an email at hello@redwoodreserves.com for help.<\/p>",
+            "text-list": "<p>Competitive wholesale pricing<\/p><p>Complimentary displays & adveertising<\/p><p>Best in class CBD smokeable products<\/p>"
+          }
+        },
+        "1b486ab1-7e71-41e6-863e-6eb04925a5a8": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Wholesale",
+            "title": "What is your wholesale MOQ?",
+            "answer": "<p>We work with a wide variety of customers ranging from big to small. Our $250 MOQ makes it easy for small shops to stock up on Redwoods. If you're interesting in ordering in large quantities fill out a wholesale application to learn about discounted pricing. <\/p>",
+            "text-list": "<p>$250 wholesale MOQ<\/p><p>Additional discounts available on large orders<\/p>"
+          }
+        },
+        "35288a1f-d0c0-487f-a1bd-f88588fcbc46": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "Wholesale",
+            "title": "Do you offer drop-shipping?",
+            "answer": "<p>Yes we do, if you're interested in drop-shipping fill out our wholesale application to learn more about our pricing and plans. <\/p>",
+            "text-list": "<p>Most orders placed before 12pm PST ship same day<\/p>"
+          }
+        },
+        "3af29b16-8476-418d-820f-0f64bdd14c40": {
+          "type": "faq_item",
+          "settings": {
+            "category_name": "",
+            "title": "",
+            "answer": "",
+            "text-list": ""
+          }
+        }
+      },
+      "block_order": [
+        "16575084025edb2201-0",
+        "11859cf4-d46f-4eac-96b9-634e728f16ef",
+        "8e436a4c-7fa8-479d-b957-d5f98d5201d6",
+        "119f46aa-5534-4340-b2c5-99d6999e20d9",
+        "834d9cfc-ac88-44dd-bd3b-16b48691d84b",
+        "62f28708-64c7-4726-8c85-91a94a83c903",
+        "81adf01a-70a9-4d91-a262-e7d49bbfca11",
+        "dc6ecbca-d9f4-4fa6-bc04-615f6af78920",
+        "7c98b6fd-5f50-4332-baed-792c6e2272f1",
+        "80d2dc80-83ad-44ed-af36-660e65ea2c55",
+        "0db699f4-52e6-4b49-a1d5-670724b1cfa3",
+        "1dc467f6-f989-40f9-b584-b8b1b7299a49",
+        "d9bd9f78-32ce-4491-b0e1-740630d3cdf7",
+        "e58cff8d-d71c-4b38-a874-e045f892c9cb",
+        "1b486ab1-7e71-41e6-863e-6eb04925a5a8",
+        "35288a1f-d0c0-487f-a1bd-f88588fcbc46",
+        "3af29b16-8476-418d-820f-0f64bdd14c40"
+      ],
+      "settings": {
+        "heading": "",
+        "bkg_clr": "#f8f8f8",
+        "top_p": 5,
+        "bot_p": 4
+      }
+    },
+    "1657508051a68764a9": {
+      "type": "ea-multicolumn",
+      "blocks": {
+        "1657508051119bf1b6-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_-2.jpg",
+            "svg_logo": "",
+            "title": "Shop CBD Cigarettes",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/cbd-cigarettes"
+          }
+        },
+        "1657508051119bf1b6-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_-1.jpg",
+            "svg_logo": "",
+            "title": "Shop CBD Flower",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/cbd-flower"
+          }
+        },
+        "1657508051119bf1b6-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_3641.jpg",
+            "svg_logo": "",
+            "title": "Shop CBD Pre Rolls",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/cbd-pre-rolls"
+          }
+        }
+      },
+      "block_order": [
+        "1657508051119bf1b6-0",
+        "1657508051119bf1b6-1",
+        "1657508051119bf1b6-2"
+      ],
+      "settings": {
+        "title": "Shop the Redwood Collection.",
+        "heading_size": "h1",
+        "card_background": "#ffffff",
+        "text_color": "#ffffff",
+        "text_hover_color": "#ffffff",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "button_label": "",
+        "button_link": "",
+        "section_type": "featured-collection",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "sectionbg": "#ffffff",
+        "sectionbg_second": "",
+        "page_width": true,
+        "animation": "none"
+      }
+    }
+  },
+  "order": [
+    "herobanner",
+    "16575084028c0eccef",
+    "1657508051a68764a9"
+  ]
+}

@@ -1,0 +1,176 @@
+.ea-image-with-text .faq__each--accordion {
+    padding: 0;
+}
+
+.ea-image-with-text .summary__title {
+    font-size: 1.9rem;
+    color: #2c3c4c;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.ea-image-with-text .summary__title:before {
+    right: 0.7rem;
+}
+
+.ea-image-with-text .details__content {
+    line-height: 1.5;
+    color: #535353;
+}
+
+.ea-image-with-text .details__content p:first-child {
+    margin-top: 0;
+}
+
+.ea-image-with-text .faq__each--accordion summary.closing__line {
+    padding-top: 0;
+}
+
+.ea-ImageAndText__title {
+    margin-bottom: 5rem;
+}
+
+.ea-image-with-text .image-with-text__content .button  {
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+}
+
+.details__content-ul {
+    padding-left: 3rem;
+}
+
+.details__content-ul p {
+    position: relative;
+}
+
+.details__content-ul p::before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 749px) {
+    .ea-ImageAndText__title .title{
+        font-size: calc(var(--font-heading-scale) * 3.4rem);
+    }
+}
+
+body#our-story .section.ea-icons-text-video {
+    /*background: url('https://cdn.shopify.com/s/files/1/0651/0664/1148/files/woodbg.svg?v=1656625676');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section.ea-icons-text-video  .title-wrapper-with-link  {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section.ea-icons-text-video  .icon_text_video__subtitle {
+    max-width: 70rem;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #535353;
+}
+
+.section.ea-icons-text-video .multicolumn-list__item,
+.section.ea-icons-text-video .grid--4-col-desktop .multicolumn-list__item {
+    text-align: center;
+}
+
+.section.ea-icons-text-video .multicolumn.icon-with-text  {
+    margin-bottom: 12.4rem;
+    display: block;
+}
+
+.section.ea-icons-text-video .image-with-text:not(.image-with-text--overlap) .image-with-text__media-item > * {
+    border: none;
+    background-color: transparent;
+}
+
+.section.ea-icons-text-video .video-section__media.deferred-media {
+    padding-bottom: 82.5% !important;
+}
+
+.section.ea-icons-text-video .image-with-text__media--small {
+    height: 19.4rem;
+}
+  
+.section.ea-icons-text-video .image-with-text__media--large {
+    height: 30rem;
+}
+
+@media screen and (max-width: 749px) {
+    .section.ea-icons-text-video .multicolumn .title {
+        font-size: 3.4rem;
+        width: 100%;
+        text-align: center;
+    }
+    .section.ea-icons-text-video .multicolumn.icon-with-text .page-width .multicolumn-list .icon_title .banner__heading {
+        font-size: 1.9rem;
+        margin: 0.5rem 0 0;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.26;
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    .section.ea-icons-text-video .multicolumn .icon_with_text_container svg {
+        min-height: 7.3rem;
+    }
+
+    .section.ea-icons-text-video .icon_text_video__subtitle {
+        margin-bottom: 0rem;
+    }
+
+    .section.ea-icons-text-video .image-with-text__content {
+        padding: 1rem 0 2rem;
+    }
+
+    .section.ea-icons-text-video .image-with-text__content .image-with-text__heading {
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+    .section.ea-icons-text-video .image-with-text__media--small {
+      height: 31.4rem;
+    }
+  
+    .section.ea-icons-text-video .image-with-text__media--large {
+      height: 54rem;
+    }
+    .section.ea-icons-text-video .image-with-text__grid--reverse .image-with-text__content {
+        margin-right: auto;
+        margin-left: 0;
+        max-width: 59rem;
+    }
+
+    .section.ea-icons-text-video  .icon_text_video__subtitle p {
+        margin: 0 auto;
+    }
+
+    .section.ea-icons-text-video .multicolumn-list {
+        min-width: 70rem;
+    }
+}

@@ -1,0 +1,131 @@
+{
+  "sections": {
+    "16577470325987ea91": {
+      "type": "ea-contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "top_text": "<p>We're great with smoke signals, but there are simpler ways to get in touch. Fill out the form below to get in touch with someone at Redwood Reserves. <\/p>",
+        "bottom_text": "<p>Please keep in mind that all contact form submissions, emails, texts, dm's, & chat requests go to the same place, so there's no need to reach out in more than one way.<\/p>",
+        "image": "shopify:\/\/shop_images\/8E79979B-9581-4A92-8DFA-4904238F47AE.jpg",
+        "button_label": "Read our FAQ",
+        "button_link": "shopify:\/\/pages\/faq",
+        "padding_top": 120,
+        "padding_bottom": 75,
+        "ptop_mob": 40,
+        "pbottom_mob": 40,
+        "sectionbg": "#fafafa",
+        "animation": "none",
+        "custom_class": ""
+      }
+    },
+    "1657739976e70d57fc": {
+      "type": "ea-rich-text",
+      "blocks": {
+        "16577399761ed13549-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Need help quick? Our customer support line is open <br\/>7 am - 3 pm PST<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "16577399761ed13549-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Just call or text us!   503-444-9847<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16577399761ed13549-0",
+        "16577399761ed13549-1"
+      ],
+      "settings": {
+        "color_background": "#f8f8f8",
+        "title_color": "#2c3c4c",
+        "text_color": "#253746",
+        "button_text_color": "#253746",
+        "button_background": "#ffffff",
+        "full_width": true,
+        "custom_css_class": "contact-us-rich-text",
+        "padding_top": 45,
+        "padding_bottom": 120,
+        "ptop_mob": 40,
+        "pbottom_mob": 40,
+        "animation": "none"
+      }
+    },
+    "1657688090dfbcbb0f": {
+      "type": "ea-multicolumn",
+      "blocks": {
+        "16576880891806766d-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lakepass_1_of_1_2x_1a946b9b-abd4-4d7c-8386-23f911f344b5.png",
+            "svg_logo": "",
+            "title": "Shop CBD Cigarettes",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections"
+          }
+        },
+        "16576880891806766d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_-1.jpg",
+            "svg_logo": "",
+            "title": "Shop CBD Flower",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections"
+          }
+        },
+        "16576880891806766d-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_3641.jpg",
+            "svg_logo": "",
+            "title": "Shop CBD Pre Rolls",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "16576880891806766d-0",
+        "16576880891806766d-1",
+        "16576880891806766d-2"
+      ],
+      "settings": {
+        "title": "Shop the Redwood Collection.",
+        "heading_size": "h1",
+        "card_background": "#ffffff",
+        "text_color": "#ffffff",
+        "text_hover_color": "#ffffff",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "button_label": "",
+        "button_link": "",
+        "section_type": "featured-collection",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "ptop_mob": 15,
+        "pbottom_mob": 20,
+        "sectionbg": "#ffffff",
+        "sectionbg_second": "",
+        "page_width": true,
+        "animation": "none"
+      }
+    }
+  },
+  "order": [
+    "16577470325987ea91",
+    "1657739976e70d57fc",
+    "1657688090dfbcbb0f"
+  ]
+}

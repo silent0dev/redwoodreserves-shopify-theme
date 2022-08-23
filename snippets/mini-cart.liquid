@@ -1,0 +1,90 @@
+{{ 'component-minicart.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{% assign cartProduct = cart.items | map: 'product_id' | join: ', ' %}
+<mini-cart class="minicart">
+  <div class="minicart__wrapper">
+    <div class="minicart__collection">
+      <div class="page-width">
+        <div class="heading">
+          <h2 class="title">You may also like</h2>
+        </div>
+
+        <div class="collection">
+
+          <ul id="product-grid" data-id="{{ section.id }}" class="
+                      grid product-grid grid--1-col-tablet-down
+                      grid--3-col-desktop">
+            {% assign count = 1 %}
+            {%- for product in collections['cart'].products -%}
+              {% unless cartProduct contains product.id %}
+                {% assign count = count | plus: 1 %}
+                <li class="grid__item">
+                  {% render 'ea-card-product',
+                  card_product: product,
+                  show_quick_add: true,
+                  show_variant_info: true
+                  %}
+                </li>
+              {% endunless %}
+              {% if count > 6 %}
+                {% break %}
+              {% endif %}
+            {%- endfor -%}
+          </ul>
+
+          {%- if paginate.pages > 1 -%}
+          {% render 'pagination', paginate: paginate, anchor: '' %}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+    <div class="minicart__main {% if cart == empty %} is-empty{% endif %}">
+      {% section 'main-cart-items' %}
+      <div class="minicart__collection_mobile medium-hide large-up-hide">
+        <div class="page-width">
+          <div class="heading">
+            <h2 class="title">Have you tried these?</h2>
+          </div>
+  
+          <div class="collection">
+            <slideshow-component class="slider-mobile-gutter">
+              <ul id="Slider-product-grid" data-id="{{ section.id }}" class="
+                          grid product-grid grid--1-col-tablet-down
+                          slider slider--tablet grid--peek">
+                {%- for product in collections['cart'].products -%}
+                  {% unless cartProduct contains product.id %}
+                    <li  id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item slider__slide">
+                      {% render 'ea-card-product',
+                      card_product: product,
+                      show_quick_add: true,
+                      show_variant_info: true
+                      %}
+                    </li>
+                  {% endunless %}
+                {%- endfor -%}
+              </ul>
+
+              <div class="slideshow__controls slider-buttons no-js-hidden {% if media_count < 2 or section.settings.mobile_thumbnails == 'show' %} small-hide{% endif %}">
+                <div class="slider-counter slider-counter-dots">
+                  <div class="slideshow__control-wrapper">
+                    {%- for product in collections['cart'].products -%}
+                      {% unless cartProduct contains product.id %}
+                        <button class="slider-counter__link slider-counter__link--dots link" aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slider-Gallery-{{ section.id }}">
+                          <span class="dot"></span>
+                        </button>  
+                      {% endunless %}
+                    {%- endfor -%}
+                  </div>
+                </div>
+              </div>
+            </slideshow-component>
+          </div>
+        </div>
+      </div>
+      {% section 'main-cart-footer' %}
+    </div>
+  </div>
+</mini-cart>
+<div id="minicart-bg" class="minicart-bg js-minicart-close"></div>

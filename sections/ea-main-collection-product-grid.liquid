@@ -1,0 +1,305 @@
+{{ 'template-ea-collection.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+<link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+<script src="{{ 'collection.js' | asset_url }}" defer></script>
+
+<div class="page-width collection__wrap grid">
+  <div class="collection__side-column grid__item">
+    <div class="filter">
+      <div class="filter-header">
+        <h3 class="hide-mobile">Shop by Collection</h3>
+      </div>
+        {% if section.blocks.size > 0 %}
+        <ul class="tabs vertical">
+            <li class="{% if 'all' == collection.handle %} active{% endif %}" data-href="#all">
+              <input id="link-all-products" class="visually-hidden" type="radio" name="collection" value="" {% if 'all' == collection.handle %} checked{% endif %}>
+              <label for="link-all-products" class="label-radio">All</label>
+            </li>
+            {%- for block in section.blocks -%}
+            {% assign sidebarCollection = block.settings.collection %}
+            <li data-href="#product-grids-{{ block.settings.collection.handle }}" class="{% if sidebarCollection.handle == collection.handle %} active{% endif %}">
+              <input id="link-{{ sidebarCollection.handle }}-{{ forloop.index }}" class="visually-hidden" type="radio" name="collection" value="{{ link.url }}" {% if sidebarCollection.handle == collection.handle %} checked{% endif %}>
+              <label for="link-{{ sidebarCollection.handle }}-{{ forloop.index }}" class="label-radio">
+                {%- if block.settings.collection_title != blank -%}
+                    {% assign words = block.settings.collection_title | escape | split: ' ' %}
+                    {% for word in words %}
+                      <span {% if block.settings.emphasize == true %} class="word_{{ forloop.index }}"{% endif %}>{{- word -}}</span>
+                    {% endfor %}
+                {%- else -%}
+                    {{ 'onboarding.collection_title' | t }}
+                {%- endif -%}
+              </label>
+            </li>
+            {%- endfor -%}
+        </ul>
+        {% endif %}
+      </div>
+      <div class="hide-desktop slideshow__swipe_text">
+        {% render 'icon-swipe' %}
+        {{ 'sections.slideshow.swipe_text' | t }}
+      </div>
+  </div>
+  <div class="collection__main-column grid__item">
+    {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
+      {{ 'component-facets.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
+
+      <div class="section-width" id="main-collection-filters" data-id="{{ section.id }}">
+        {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, collapse_on_larger_devices: section.settings.collapse_on_larger_devices %}
+      </div>
+    {%- endif -%}
+
+    <div id="ProductGridContainer">
+      {% if section.blocks.size > 0 %}
+          {%- for block in section.blocks -%}
+            {% assign collection = block.settings.collection %}
+            {%- if collection.products.size == 0 -%}
+              <div class="collection collection--empty" id="product-grids" data-id="{{ section.id }}">
+                <div class="loading-overlay gradient"></div>
+                <div class="title-wrapper center">
+                  <h2 class="title title--primary">
+                    {{ 'sections.collection_template.empty' | t }}<br>
+                    {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+                  </h2>
+                </div>
+              </div>
+            {%- else -%}
+            
+              <style>
+                #product-grids-{{ collection.handle }} .collection-banner h3 {
+                  color:{{ block.settings.title_color }};
+                }
+                @media screen and (max-width: 990px) {
+                  {% if block.settings.mobile_img != blank %}
+                  #product-grids-{{ collection.handle }} .collection-banner{
+                    background-image: url('{{ block.settings.mobile_img | img_url: '' }}')!important;
+                  }
+                  {% else %}
+                  #product-grids-{{ collection.handle }} .collection-banner{
+                    background-image: none !important;
+                    background-color: transparent;
+                  }
+                  {% endif %}
+                  #product-grids-{{ collection.handle }} .collection-banner h3 {
+                    color:{{ block.settings.mobile_title_color }};
+                  }
+                }
+              </style>
+
+              <div class="collection" id="product-grids-{{ collection.handle }}">
+                <div class="collection-banner {{ block.settings.img_position }}" style="background-image: url('{{ block.settings.collection_img | img_url: '' }}');">
+                  <h3 style=" text-align:{{ block.settings.text_align }};">
+                    {%- if block.settings.collection_title != blank -%}
+                      {% assign words = block.settings.collection_title | escape | split: ' ' %}
+                      {% for word in words %}
+                        <span {% if block.settings.emphasize == true %} class="word_{{ forloop.index }}"{% endif %}>{{- word -}}</span>
+                      {% endfor %}
+                    {%- else -%}
+                        {{ 'onboarding.collection_title' | t }}
+                    {%- endif -%}
+                  </h3>
+                </div>
+                <div class="loading-overlay gradient"></div>
+
+                <ul id="product-grid" data-id="{{ section.id }}" class="
+                  grid grid--1-col negative-margin product-grid
+                  {% if collection.products_count < 3 %} grid--2-col-tablet grid--3-col-desktop{% else %}
+                    {% if collection.products_count == 3 %} grid--2-col-tablet grid--3-col-desktop{% else %} grid--2-col-tablet grid--one-third-max grid--3-col-desktop grid--third-max{% endif %}
+                  {% endif %}">
+                  {%- for product in collection.products -%}
+                    <li class="grid__item">
+                      {% render 'ea-card-product',
+                        card_product: product,
+                        media_aspect_ratio: section.settings.image_ratio,
+                        show_secondary_image: section.settings.show_secondary_image,
+                        show_vendor: section.settings.show_vendor,
+                        show_rating: section.settings.show_rating,
+                        lazy_load: lazy_load,
+                        show_quick_add: section.settings.enable_quick_add,
+                        section_id: section.id,
+                        show_description: true
+                      %}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+
+                {%- if paginate.pages > 1 -%}
+                  {% render 'pagination', paginate: paginate, anchor: '' %}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+      {%- endif -%}
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.ea-main-collection-product-grid.name",
+  "class": "spaced-section collection-grid-section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "products_per_page",
+      "min": 8,
+      "max": 24,
+      "step": 4,
+      "default": 16,
+      "label": "t:sections.ea-main-collection-product-grid.settings.products_per_page.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.ea-main-collection-product-grid.settings.header__3.content"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.ea-main-collection-product-grid.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.ea-main-collection-product-grid.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.ea-main-collection-product-grid.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.ea-main-collection-product-grid.settings.image_ratio.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.ea-main-collection-product-grid.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image_outline",
+      "default": true,
+      "label": "t:sections.ea-main-collection-product-grid.settings.show_image_outline.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.ea-main-collection-product-grid.settings.show_vendor.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.ea-main-collection-product-grid.settings.show_rating.label",
+      "info": "t:sections.ea-main-collection-product-grid.settings.show_rating.info"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "featured_collection",
+      "name": "t:sections.ea-main-collection-product-grid.blocks.featured_collection.name",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:sections.ea-main-collection-product-grid.blocks.featured_collection.settings.collection.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "emphasize",
+          "default": false,
+          "label": "t:sections.ea-main-collection-product-grid.blocks.featured_collection.settings.emphasize.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "collection_img",
+          "label": "t:sections.ea-main-collection-product-grid.blocks.featured_collection.settings.collection_img.label"
+        },
+        {
+          "type": "select",
+          "id": "img_position",
+          "label": "t:sections.ea-main-collection-product-grid.blocks.featured_collection.settings.img_position.label",
+          "options": [
+            {
+              "value": "right",
+              "label": "Left"
+            },
+            {
+              "value": "left",
+              "label": "Right"
+            }
+          ],
+          "default": "right"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "label": "t:sections.ea-main-collection-product-grid.blocks.featured_collection.settings.text_align.label",
+          "options": [
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "t:sections.ea-main-collection-product-grid.blocks.featured_collection.settings.collection_title.label"
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "t:sections.ea-main-collection-product-grid.blocks.featured_collection.settings.title_color.label"
+        },
+        {
+          "type": "color",
+          "id": "mobile_title_color",
+          "label": "t:sections.ea-main-collection-product-grid.blocks.featured_collection.settings.mobile_title_color.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_img",
+          "label": "t:sections.ea-main-collection-product-grid.blocks.featured_collection.settings.mobile_img.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.ea-main-collection-product-grid.presets.name",
+      "blocks": [
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

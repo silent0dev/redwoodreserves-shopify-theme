@@ -1,0 +1,539 @@
+{
+  "sections": {
+    "main": {
+      "type": "ea-main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.eag_fields.shortdescription | metafield_tag }}<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "136f8c02-5cb1-4ed7-8e4a-7dfdb257d694": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{ product }}"
+          }
+        },
+        "1511d702-a095-4863-9f36-4440da71097f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.eag_fields.short_list | metafield_tag }}<\/p>",
+            "text_style": "list"
+          }
+        },
+        "49134211-6e8e-4c48-b76e-3e4a332571d5": {
+          "type": "product-switcher",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "1d305899-6518-474d-91e1-1d0d8e6bef1c": {
+          "type": "recharge-options",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "pick_up_availability": true
+          }
+        },
+        "ec5f67f8-9759-4604-8fc7-891558bba981": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.eag_fields.warning_note | metafield_tag }}<\/p>",
+            "text_style": "warning"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapsible_tab": true
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What Is CBD?",
+            "icon": "none",
+            "content": "<p>CBD, also known as Cannabidiol, is the most abundant cannabinoid in the hemp plant. Explore how each strain has its own unique features, such as effects, terpenes, and cannabinoid breakdowns.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.eag_fields.ingredients | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "none",
+            "content": "<p>CBD cigarettes (or hemp cigarettes) are a traditional cigarette alternative that takes your smoking experience to another level while helping you quit tobacco-filled cigarettes. Our CBD cigs are only rolled with hemp flower and contain no tobacco or nicotine. CBD smokes are: <\/p>",
+            "page": ""
+          }
+        },
+        "e40cdab9-e873-4b04-abdc-2d408afc92f1": {
+          "type": "support-note",
+          "settings": {
+            "title": "Need help? Our customer support line is open \n7 am - 3 pm PST",
+            "desc": "Just call or text us!   503-444-9847"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "caption",
+        "136f8c02-5cb1-4ed7-8e4a-7dfdb257d694",
+        "1511d702-a095-4863-9f36-4440da71097f",
+        "49134211-6e8e-4c48-b76e-3e4a332571d5",
+        "variant_picker",
+        "1d305899-6518-474d-91e1-1d0d8e6bef1c",
+        "buy_buttons",
+        "ec5f67f8-9759-4604-8fc7-891558bba981",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-2",
+        "collapsible-row-1",
+        "e40cdab9-e873-4b04-abdc-2d408afc92f1"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail",
+        "media_size": "medium",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 52,
+        "padding_bottom": 12,
+        "ptop_mob": 0,
+        "pbottom_mob": 10
+      }
+    },
+    "16576049049fe0b7fa": {
+      "type": "ea-icon-with-text",
+      "blocks": {
+        "e5c21475-79a3-47c8-a631-8952763a8564": {
+          "type": "icon",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"79\" height=\"73\" viewbox=\"0 0 79 73\">\n    <g data-name=\"Group 13593\">\n        <path data-name=\"Rectangle 3249\" style=\"fill:none\" d=\"M0 0h79v73H0z\"><\/path>\n        <path data-name=\"np_natural_3574169_000000 1\" d=\"M62.61 19.3a.543.543 0 0 1 .213 1.036c-2.864 1.318-5.257 5.1-6.867 12.755-1.98 9.409-10.07 13.142-16.312 11.957A33.11 33.11 0 0 0 39.1 50.2a2.589 2.589 0 0 1-2.618 2.508h-.038a2.609 2.609 0 0 1-2.613-2.85A25.324 25.324 0 0 1 45.544 30.73a25.118 25.118 0 0 0-10.486 7.36 1.715 1.715 0 0 1-3.013-.9l-.005-.04C30.624 23.9 46.838 18.491 62.609 19.3zM4.327 31.462a.462.462 0 0 1 .182-.88c13.44-.692 27.254 3.921 26.049 15.207a1.15 1.15 0 0 1-2.113.45 21.076 21.076 0 0 0-9.4-6.844 22.25 22.25 0 0 1 7.742 8.5 3.149 3.149 0 0 1-1.936 4.447c-5.4 1.494-12.9-1.6-14.673-10.011-1.368-6.518-3.409-9.745-5.851-10.869z\" transform=\"translate(6.345 .816)\" style=\"fill:#fff;fill-rule:evenodd\"><\/path>\n    <\/g>\n<\/svg>",
+            "title": "Naturally Grown",
+            "heading_size": "small",
+            "desc": "",
+            "icon_link": ""
+          }
+        },
+        "fa194d27-2213-4b63-9f6e-091fb5d583d2": {
+          "type": "icon",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"81\" height=\"71\" viewbox=\"0 0 81 71\">\n    <g data-name=\"Group 13594\">\n        <path data-name=\"Rectangle 3250\" style=\"fill:none\" d=\"M0 0h81v71H0z\"><\/path>\n        <path data-name=\"np_marijuana_3544006_000000 1\" d=\"M42.129 39.094a37.381 37.381 0 0 0-4.866 2.255 48.1 48.1 0 0 0 6.022-6.1 52.041 52.041 0 0 0 8.808-16.261 50.332 50.332 0 0 0-14.027 11.759 47.554 47.554 0 0 0-3.912 5.594 52.5 52.5 0 0 0 .929-9.51 61.235 61.235 0 0 0-4.04-20.61A61.145 61.145 0 0 0 27 26.83a51.914 51.914 0 0 0 .833 8.945 47.255 47.255 0 0 0-3.561-5.03A50.251 50.251 0 0 0 10.235 18.99a52.212 52.212 0 0 0 8.818 16.261 47.691 47.691 0 0 0 6.015 6.09 37.841 37.841 0 0 0-4.859-2.249A40.43 40.43 0 0 0 5.4 36.637a41.5 41.5 0 0 0 12.883 7.913 40.357 40.357 0 0 0 11 2.356l-.032.1.244.011c.06.056.107.1.183.174a17.116 17.116 0 0 0-3.15.985 18.617 18.617 0 0 0-5.593 3.794 18.059 18.059 0 0 0 6.556-1.4 18.284 18.284 0 0 0 3.675-2.152A17.227 17.227 0 0 0 41.4 51.969a18.554 18.554 0 0 0-5.588-3.794 17.117 17.117 0 0 0-3.15-.985c.079-.073.123-.118.181-.174.128 0 .248-.011.248-.011s-.012-.032-.032-.1a40.376 40.376 0 0 0 11.007-2.356 41.506 41.506 0 0 0 12.88-7.913 40.558 40.558 0 0 0-14.812 2.457z\" transform=\"translate(10.187 6.234)\" style=\"fill:#fff\"><\/path>\n    <\/g>\n<\/svg>",
+            "title": "Full Spectrum",
+            "heading_size": "small",
+            "desc": "",
+            "icon_link": ""
+          }
+        },
+        "99859470-f1a9-48f2-8bfb-742a9fcd0aff": {
+          "type": "icon",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"70\" height=\"70\" viewbox=\"0 0 70 64\">\n    <g data-name=\"Group 13596\">\n        <path data-name=\"Rectangle 3252\" style=\"fill:none\" d=\"M0 0h70v64H0z\"><\/path>\n        <path data-name=\"np_no-chemicals_4744190_000000 1\" d=\"M50.524 22.345a10.815 10.815 0 0 1-2.709 2.893 6.374 6.374 0 0 1-5.954.431l-.488-.3-2.684 1.749v1.772c5.653 0 5.987.051 6.082.146s.146.431.146 2.2v.336c0 1.174 0 1.61-.212 1.825-.157.155-.382.157-.77.152h-.721l.038 14.151c.03 10.268.011 14.435-.07 14.864a4.89 4.89 0 0 1-2.505 3.357 6.588 6.588 0 0 1-2.351.55 5.3 5.3 0 0 1-4.94-3.53c-.2-.634-.2-.906-.2-15.078V34.592h4.468a.518.518 0 0 0 0-1.036H32.61c-.5 0-.794 0-.941-.35a6.945 6.945 0 0 1-.13-2.047c0-1.8 0-1.906.258-2.09.2-.144.651-.171 5.854-.173v-1.777L29.8 22.027a.519.519 0 1 0-.567.87l4.322 2.817a4.943 4.943 0 0 1-1.773.266 5.578 5.578 0 0 1-4.265-1.83 10.958 10.958 0 0 1-2.541-3.956c-.629-1.521-.762-2.28-.445-2.541a15.272 15.272 0 0 1 4.059.122 7.7 7.7 0 0 1 5.6 3.3 6.2 6.2 0 0 1 .721 2.755v.27l2.733 1.781v-3.306h-.005V13.72a.518.518 0 0 0-1.036 0v8.113c-2.562-2.175-3.66-6.467-2.557-10.4A17.857 17.857 0 0 1 37.3 5.085c.811-1.076.963-1.076 1.028-1.076.659 0 4.49 4.208 4.49 9.593a10.686 10.686 0 0 1-1.163 5.42 8.275 8.275 0 0 1-2.294 3.034l-.67.561v3.264l2.356-1.535.027-.358c.306-3.641 3.427-5.905 8.142-5.905.8 0 2.6.108 2.738.431.165.439-.678 2.565-1.429 3.834zM38.863 44.361a1.684 1.684 0 1 0-1.684 1.684 1.685 1.685 0 0 0 1.684-1.684zm-1.039 0a.645.645 0 1 1-.645-.645.647.647 0 0 1 .645.645zm1.486 3.164a1.022 1.022 0 1 0 1.022 1.022 1.023 1.023 0 0 0-1.022-1.022z\" transform=\"translate(-2.479 -3.223)\" style=\"fill:#fff\"><\/path>\n    <\/g>\n<\/svg>",
+            "title": "3rd Party Lab Tested",
+            "heading_size": "small",
+            "desc": "",
+            "icon_link": ""
+          }
+        },
+        "6fd31640-33c7-426e-9f3b-fa967052dd64": {
+          "type": "icon",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"70\" height=\"64\" viewbox=\"0 0 70 64\">\n    <g data-name=\"Group 13595\">\n        <path data-name=\"Rectangle 3251\" style=\"fill:none\" d=\"M0 0h70v64H0z\"><\/path>\n        <path data-name=\"np_farmer_1096906_000000 1\" d=\"M20.588 36.2v16.4h-3.234V42.141a7.3 7.3 0 0 1 3.234-5.941zm3.384 16.4h16.316v-2H23.972zm19.773-16.4v16.4h3.234V42.141a7.3 7.3 0 0 0-3.234-5.941zM41.19 15.645l-.675-5.271A2.741 2.741 0 0 0 37.806 8H26.527a2.743 2.743 0 0 0-2.708 2.374l-.676 5.271C18.858 16.388 16 17.576 16 18.91c0 1.261 2.482 2.45 6.315 3.117a9.209 9.209 0 0 0-.076 1.484 11.55 11.55 0 0 0 5.114 9.872l-4.136 1.56v9.649h17.82v-9.649l-4.137-1.56a11.731 11.731 0 0 0 5.114-9.872 8.263 8.263 0 0 0-.076-1.409h-.076c3.909-.742 6.391-1.856 6.391-3.192.079-1.334-2.779-2.522-7.064-3.265z\" transform=\"translate(2.584 2.017)\" style=\"fill:#fff\"><\/path>\n    <\/g>\n<\/svg>",
+            "title": "Farmer Owned",
+            "heading_size": "small",
+            "desc": "",
+            "icon_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "e5c21475-79a3-47c8-a631-8952763a8564",
+        "fa194d27-2213-4b63-9f6e-091fb5d583d2",
+        "99859470-f1a9-48f2-8bfb-742a9fcd0aff",
+        "6fd31640-33c7-426e-9f3b-fa967052dd64"
+      ],
+      "settings": {
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "columns_mobile": "2",
+        "sectionbg": "#2c3c4c",
+        "text_color": "#ffffff",
+        "page_width": true,
+        "title": ""
+      }
+    },
+    "165780783228867c5c": {
+      "type": "ea-image-with-text",
+      "blocks": {
+        "16578078328f951d02-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cannabinoid Profile:",
+            "heading_size": "h1"
+          }
+        },
+        "16578078328f951d02-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>CBD, also known as Cannabidiol, is the most abundant cannabinoid in the hemp plant. Explore how each strain has its own unique features, such as effects, terpenes, and cannabinoid breakdowns.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "60e9c852-d23e-45f6-92cf-3352939aa2f5": {
+          "type": "metafield_types",
+          "settings": {
+            "product": "{{ product }}"
+          }
+        }
+      },
+      "block_order": [
+        "16578078328f951d02-0",
+        "16578078328f951d02-1",
+        "60e9c852-d23e-45f6-92cf-3352939aa2f5"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image": "shopify:\/\/shop_images\/Copy_of_couch_76d5f83c-942d-47f1-93ff-abaf57cb4433.jpg",
+        "remove_image": false,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "desktop_image_block_width": 55,
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left",
+        "padding_top": 90,
+        "padding_bottom": 50,
+        "ptop_mob": 40,
+        "pbottom_mob": 40,
+        "sectionbg": "#ffffff",
+        "combinebg": "no",
+        "animation": "none",
+        "custom_class": ""
+      }
+    },
+    "1657808070fb9fe747": {
+      "type": "ea-image-with-text",
+      "blocks": {
+        "462b10e7-d17a-461b-aaab-57e318576c7d": {
+          "type": "caption",
+          "settings": {
+            "caption": "Your Wellness, Your Way",
+            "text_style": "subtitle",
+            "text_size": "small"
+          }
+        },
+        "1657808070142389cc-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe & Save 20%",
+            "heading_size": "h1"
+          }
+        },
+        "1657808070142389cc-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "b2364d91-9449-42b7-85cb-b5ca8d733880": {
+          "type": "feature_line",
+          "settings": {
+            "feature_line": "Cancel any time!",
+            "feature_icon": "<svg data-name=\"marijuana icon\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"10.903\" height=\"13.283\" viewbox=\"0 0 10.903 13.283\">\n    <path data-name=\"Path 60853\" d=\"M61.044 12.808a3.083 3.083 0 0 0 .934-.12 3.636 3.636 0 0 0-.784 1.6 3.9 3.9 0 0 0 1.9-.9l.241-.241-.12 2.319a.406.406 0 0 0 .392.421h.241a.373.373 0 0 0 .392-.421l-.12-2.319a.9.9 0 0 0 .241.241 3.9 3.9 0 0 0 1.9.9 4.1 4.1 0 0 0-.784-1.6 4.673 4.673 0 0 0 .934.12 5.389 5.389 0 0 0 2.8-.9 5.587 5.587 0 0 0-2.591-.9 9.3 9.3 0 0 0 .813-.753A7.865 7.865 0 0 0 69.178 6.3a7.8 7.8 0 0 0-3.734 2.17 3.367 3.367 0 0 0-.392.512 7.853 7.853 0 0 0 .091-1.2A11.21 11.21 0 0 0 63.757 2.6a11.211 11.211 0 0 0-1.386 5.18 7.852 7.852 0 0 0 .091 1.2 5.537 5.537 0 0 0-.392-.512A7.784 7.784 0 0 0 58.336 6.3a7.866 7.866 0 0 0 1.747 3.946A4.747 4.747 0 0 0 60.9 11a5.587 5.587 0 0 0-2.591.9 4.925 4.925 0 0 0 2.739.9z\" transform=\"translate(-58.305 -2.597)\" style=\"fill:#2c3c4c\"><\/path>\n<\/svg>"
+          }
+        },
+        "006d24a3-ee4a-4212-92a1-6d08c52f065a": {
+          "type": "feature_line",
+          "settings": {
+            "feature_line": "Change delivery frequency any time",
+            "feature_icon": "<svg data-name=\"marijuana icon\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"10.903\" height=\"13.283\" viewbox=\"0 0 10.903 13.283\">\n    <path data-name=\"Path 60853\" d=\"M61.044 12.808a3.083 3.083 0 0 0 .934-.12 3.636 3.636 0 0 0-.784 1.6 3.9 3.9 0 0 0 1.9-.9l.241-.241-.12 2.319a.406.406 0 0 0 .392.421h.241a.373.373 0 0 0 .392-.421l-.12-2.319a.9.9 0 0 0 .241.241 3.9 3.9 0 0 0 1.9.9 4.1 4.1 0 0 0-.784-1.6 4.673 4.673 0 0 0 .934.12 5.389 5.389 0 0 0 2.8-.9 5.587 5.587 0 0 0-2.591-.9 9.3 9.3 0 0 0 .813-.753A7.865 7.865 0 0 0 69.178 6.3a7.8 7.8 0 0 0-3.734 2.17 3.367 3.367 0 0 0-.392.512 7.853 7.853 0 0 0 .091-1.2A11.21 11.21 0 0 0 63.757 2.6a11.211 11.211 0 0 0-1.386 5.18 7.852 7.852 0 0 0 .091 1.2 5.537 5.537 0 0 0-.392-.512A7.784 7.784 0 0 0 58.336 6.3a7.866 7.866 0 0 0 1.747 3.946A4.747 4.747 0 0 0 60.9 11a5.587 5.587 0 0 0-2.591.9 4.925 4.925 0 0 0 2.739.9z\" transform=\"translate(-58.305 -2.597)\" style=\"fill:#2c3c4c\"><\/path>\n<\/svg>"
+          }
+        },
+        "4af7d619-fdbc-4d13-a1a3-76df29f2f1d8": {
+          "type": "feature_line",
+          "settings": {
+            "feature_line": "Get reminders of your upcoming shipment",
+            "feature_icon": "<svg data-name=\"marijuana icon\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"10.903\" height=\"13.283\" viewbox=\"0 0 10.903 13.283\">\n    <path data-name=\"Path 60853\" d=\"M61.044 12.808a3.083 3.083 0 0 0 .934-.12 3.636 3.636 0 0 0-.784 1.6 3.9 3.9 0 0 0 1.9-.9l.241-.241-.12 2.319a.406.406 0 0 0 .392.421h.241a.373.373 0 0 0 .392-.421l-.12-2.319a.9.9 0 0 0 .241.241 3.9 3.9 0 0 0 1.9.9 4.1 4.1 0 0 0-.784-1.6 4.673 4.673 0 0 0 .934.12 5.389 5.389 0 0 0 2.8-.9 5.587 5.587 0 0 0-2.591-.9 9.3 9.3 0 0 0 .813-.753A7.865 7.865 0 0 0 69.178 6.3a7.8 7.8 0 0 0-3.734 2.17 3.367 3.367 0 0 0-.392.512 7.853 7.853 0 0 0 .091-1.2A11.21 11.21 0 0 0 63.757 2.6a11.211 11.211 0 0 0-1.386 5.18 7.852 7.852 0 0 0 .091 1.2 5.537 5.537 0 0 0-.392-.512A7.784 7.784 0 0 0 58.336 6.3a7.866 7.866 0 0 0 1.747 3.946A4.747 4.747 0 0 0 60.9 11a5.587 5.587 0 0 0-2.591.9 4.925 4.925 0 0 0 2.739.9z\" transform=\"translate(-58.305 -2.597)\" style=\"fill:#2c3c4c\"><\/path>\n<\/svg>"
+          }
+        },
+        "10636516-25da-4121-beb4-c1f6f57864b9": {
+          "type": "feature_line",
+          "settings": {
+            "feature_line": "Full-spectrum entourage effect, just as nature intended",
+            "feature_icon": "<svg data-name=\"marijuana icon\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"10.903\" height=\"13.283\" viewbox=\"0 0 10.903 13.283\">\n    <path data-name=\"Path 60853\" d=\"M61.044 12.808a3.083 3.083 0 0 0 .934-.12 3.636 3.636 0 0 0-.784 1.6 3.9 3.9 0 0 0 1.9-.9l.241-.241-.12 2.319a.406.406 0 0 0 .392.421h.241a.373.373 0 0 0 .392-.421l-.12-2.319a.9.9 0 0 0 .241.241 3.9 3.9 0 0 0 1.9.9 4.1 4.1 0 0 0-.784-1.6 4.673 4.673 0 0 0 .934.12 5.389 5.389 0 0 0 2.8-.9 5.587 5.587 0 0 0-2.591-.9 9.3 9.3 0 0 0 .813-.753A7.865 7.865 0 0 0 69.178 6.3a7.8 7.8 0 0 0-3.734 2.17 3.367 3.367 0 0 0-.392.512 7.853 7.853 0 0 0 .091-1.2A11.21 11.21 0 0 0 63.757 2.6a11.211 11.211 0 0 0-1.386 5.18 7.852 7.852 0 0 0 .091 1.2 5.537 5.537 0 0 0-.392-.512A7.784 7.784 0 0 0 58.336 6.3a7.866 7.866 0 0 0 1.747 3.946A4.747 4.747 0 0 0 60.9 11a5.587 5.587 0 0 0-2.591.9 4.925 4.925 0 0 0 2.739.9z\" transform=\"translate(-58.305 -2.597)\" style=\"fill:#2c3c4c\"><\/path>\n<\/svg>"
+          }
+        },
+        "1657808070142389cc-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "462b10e7-d17a-461b-aaab-57e318576c7d",
+        "1657808070142389cc-0",
+        "1657808070142389cc-1",
+        "b2364d91-9449-42b7-85cb-b5ca8d733880",
+        "006d24a3-ee4a-4212-92a1-6d08c52f065a",
+        "4af7d619-fdbc-4d13-a1a3-76df29f2f1d8",
+        "10636516-25da-4121-beb4-c1f6f57864b9",
+        "1657808070142389cc-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image": "shopify:\/\/shop_images\/Copy_of_couch_ecfe1ebf-e270-4e42-87e1-1f44b3250d0a.jpg",
+        "remove_image": false,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "desktop_image_block_width": 50,
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 80,
+        "ptop_mob": 40,
+        "pbottom_mob": 40,
+        "sectionbg": "#ffffff",
+        "combinebg": "no",
+        "animation": "none",
+        "custom_class": ""
+      }
+    },
+    "1657604224f6099a97": {
+      "type": "ea-image-with-text",
+      "blocks": {
+        "65733807-e889-44c9-804d-202ecb0264a3": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What are CBD cigarettes?",
+            "text": "<p>CBD cigarettes (or hemp cigarettes) are a traditional cigarette alternative that takes your smoking experience to another level while helping you quit tobacco-filled cigarettes. Our CBD cigs are only rolled with hemp flower and contain no tobacco or nicotine. CBD smokes are: <\/p>",
+            "text-list": "<p>Rolled with only hemp flower <\/p><p>Completely free of tobacco, nicotine, or additives<\/p><p>An all-natural tobacco substitute and effective quit smoking aid <\/p><p>Non-intoxicating, with less than 0.3% ∆9 THC for a chill without the high<\/p>"
+          }
+        },
+        "6d8e48eb-9918-44fb-9855-ff2d8a4b2689": {
+          "type": "accordion",
+          "settings": {
+            "heading": "CBD cigarettes vs tobacco cigarettes",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-list": ""
+          }
+        },
+        "88695499-a140-47eb-b1bb-40eca9269777": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Do CBD Cigarettes Contain Nicotine?",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-list": ""
+          }
+        },
+        "a2c3ca46-76e8-47e7-ad2a-c50e8edd613d": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is Smoking CBD addictive?",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-list": ""
+          }
+        },
+        "598d975d-5305-42b3-b508-1a4250f85685": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What are CBD Cigarettes made of?",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-list": ""
+          }
+        },
+        "42b117ce-cde3-4ee4-87e1-cd234d8fbf45": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Benefits of CBD cigarettes",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-list": ""
+          }
+        },
+        "1657604224b03adca2-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Visit our far page",
+            "button_link": "#",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "65733807-e889-44c9-804d-202ecb0264a3",
+        "6d8e48eb-9918-44fb-9855-ff2d8a4b2689",
+        "88695499-a140-47eb-b1bb-40eca9269777",
+        "a2c3ca46-76e8-47e7-ad2a-c50e8edd613d",
+        "598d975d-5305-42b3-b508-1a4250f85685",
+        "42b117ce-cde3-4ee4-87e1-cd234d8fbf45",
+        "1657604224b03adca2-2"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "heading_size": "h0",
+        "image": "shopify:\/\/shop_images\/Rectangle_-2.jpg",
+        "remove_image": true,
+        "height": "small",
+        "desktop_image_width": "small",
+        "desktop_image_block_width": 44,
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left",
+        "padding_top": 70,
+        "padding_bottom": 105,
+        "ptop_mob": 40,
+        "pbottom_mob": 40,
+        "sectionbg": "#f8f8f8",
+        "combinebg": "no",
+        "animation": "none",
+        "custom_class": "faq-image-with-text"
+      }
+    },
+    "16612682644aaaaf00": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16576162988b06b5a4": {
+      "type": "apps",
+      "blocks": {
+        "2221acdb-14b0-4350-90b6-f7adfbe4cb4c": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2221acdb-14b0-4350-90b6-f7adfbe4cb4c"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "16576222008cf035ea": {
+      "type": "ea-featured-collection",
+      "settings": {
+        "title": "Shop Our Selection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "shop-our-selection",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 84,
+        "padding_bottom": 84,
+        "custom_class": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "16576239601c274281": {
+      "type": "apps",
+      "blocks": {
+        "c5b38d9a-a202-43d6-8f42-f36b8180d984": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 25,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "c5b38d9a-a202-43d6-8f42-f36b8180d984"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16576049049fe0b7fa",
+    "165780783228867c5c",
+    "1657808070fb9fe747",
+    "1657604224f6099a97",
+    "16612682644aaaaf00",
+    "16576162988b06b5a4",
+    "16576222008cf035ea",
+    "product-recommendations",
+    "16576239601c274281"
+  ]
+}

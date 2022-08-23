@@ -1,0 +1,47 @@
+.section-icon-and-text .icon-with-text .icon_title .h3{
+    margin: 5px 0;
+}
+
+.section-icon-and-text .icon_title .h3 {
+    color: #253746;
+    font-weight: 600;
+    font-size: calc(var(--font-heading-scale) * 1.7rem);
+    font-family: var(--font-body-family);
+}
+
+body.index .section-icon-and-text {
+    background: url('https://cdn.shopify.com/s/files/1/0651/0664/1148/files/woodbg.svg?v=1656625676');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-icon-and-text  .grid__item {
+    width: calc(50% - 2.5rem * 2 / 3);
+    max-width: calc(50% - 2.5rem / 2);
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.multicolumn.icon-with-text .page-width .multicolumn-list .icon_title .rte {
+    display: none;
+}
+
+.multicolumn.icon-with-text .page-width .multicolumn-list {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    justify-content: space-between;
+}
+
+
+@media screen and (min-width: 750px) {
+    .multicolumn.icon-with-text .page-width .multicolumn-list .icon_title .rte {
+        display: block;
+    }
+
+    .section-icon-and-text  .grid__item {
+        width: calc(25% - 2.5rem * 3 / 4);
+        max-width: calc(50% - 2.5rem / 2);
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+}

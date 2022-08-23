@@ -1,0 +1,41 @@
+
+@media screen and (max-width: 989px) {
+    .ea-featured-collection {
+        padding: 0 2rem;
+        --grid-mobile-horizontal-spacing: 2.5rem
+    }
+    
+    .ea-featured-collection .slider--tablet.grid--peek .grid__item {
+        box-sizing: border-box;
+    }
+}
+
+.ea-featured-collection .collection__description{
+    max-width: 55rem;
+    margin: auto;
+    color: #535353;
+}
+
+.ea-featured-collection ea-slideshow-component {
+    --desktop-margin-left-first-item: max(5rem, calc((100vw - var(--page-width) + 10rem - var(--grid-desktop-horizontal-spacing)) / 2));
+    position: relative;
+    display: block;
+}
+
+
+
+
+@media screen and (min-width: 990px) and (max-width: 1200px)  {
+    .s-mod-featured-collection-grid .grid--4-col-desktop .grid__item {
+        width: calc(33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+        max-width: calc(33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+    }
+}
+
+
+@media screen and (min-width: 1600px) {
+    .s-mod-top-sellers-grid .slider--desktop.grid--3-col-desktop .grid__item {
+        width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+        max-width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+    }
+}

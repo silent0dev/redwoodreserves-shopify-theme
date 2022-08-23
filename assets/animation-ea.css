@@ -1,0 +1,61 @@
+.animation-mode {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+}
+.come-in {
+   /*transform: translateY(100px);
+   */
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+    animation: come-in 1s ease forwards;
+}
+.come-in[data-duration="first"] {
+    animation: come-in 1s ease forwards;
+}
+.come-in[data-duration="second"] {
+    animation: come-in 2s ease forwards;
+}
+.come-in[data-duration="1"] {
+    animation: come-in 0.4s ease forwards;
+}
+.come-in[data-duration="2"] {
+    animation: come-in 0.8s ease forwards;
+}
+.come-in[data-duration="3"] {
+    animation: come-in 1.2s ease forwards;
+}
+.come-in[data-duration="4"] {
+    animation: come-in 1.6s ease forwards;
+}
+.come-in[data-duration="5"] {
+    animation: come-in 2s ease forwards;
+}
+.come-in[data-duration="6"] {
+    animation: come-in 2.4s ease forwards;
+}
+.come-in[data-duration="7"] {
+    animation: come-in 2.8s ease forwards;
+}
+.come-in[data-duration="8"] {
+    animation: come-in 3.2s ease forwards;
+}
+.already-visible {
+   /*transform: translateY(0);
+   */
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    animation: none;
+}
+@media (max-width: 749px) {
+    .animation-mobile-disable {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        animation: none;
+   }
+}
+@keyframes come-in {
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+   }
+}

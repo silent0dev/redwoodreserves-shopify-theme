@@ -1,0 +1,54 @@
+.accordion summary,
+.accordion label {
+    display: flex;
+    position: relative;
+    line-height: 1;
+    padding: 2rem 0;
+}
+
+.accordion:not(.footer-block) .summary__title+.icon-caret {
+    height: calc(var(--font-heading-scale) * 1rem);
+    margin-top: 6px;
+}
+
+
+.product__accordion.accordion label {
+    padding: 1.5rem 0;
+    cursor: pointer;
+}
+
+
+.product__accordion .accordion__title {
+    font-family: var(--font-body-family);
+    font-size: calc(var(--font-heading-scale) * 1.9rem);
+    font-weight: bold;
+    color: #2c3c4c;
+}
+
+
+.product__accordion .icon-caret {
+    color: #2c3c4c;
+}
+
+.accordion:not(.footer-block) details[open]>summary .icon-caret,
+.accordion input:checked~label .icon-caret {
+    transform: rotate(180deg);
+}
+
+.product__accordion input~.accordion__content {
+    overflow: hidden;
+    margin: 0;
+    transition: height 0.5s;
+    color: #535353;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.product__accordion input:not(:checked)~.accordion__content {
+    height: 0 !important;
+}
+
+.product__accordion input:checked~.accordion__content {
+    height: auto;
+    margin-bottom: 20px;
+}

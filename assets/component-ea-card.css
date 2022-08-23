@@ -1,0 +1,12 @@
+.ea-collection__title h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #2c3c4c;
+    font-size: 3.4rem;
+}
+
+@media screen and (min-width: 750px) {
+    .ea-collection__title h2 {
+        font-size: 4.5rem;
+    }
+}

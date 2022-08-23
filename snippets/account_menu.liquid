@@ -1,0 +1,66 @@
+<div class="my-account-menu animation">
+  
+    <div class="clearfix small-flex my-account-menu-wrapper" data-accordions-container data-accordions-mobile-only="1">
+      <h1 class="account-h1">
+        <a href="/account">Hi, {{ customer.first_name }}</a>
+      </h1>
+      <div class="goto">
+          <ul>
+            <li class="animation" data-link="account"><a class="no-hover-link" href="/account">My Account</a></li>
+            <li class="animation" data-link="account/addresses"><a class="no-hover-link"  href="/account/addresses">Address Book</a></li>
+            <li class="animation" data-link="account/orders">
+              <a 
+              class="scroll no-hover-link" 
+              {% if template == "customers/account" %}
+                  data-hash="#customer_orders"
+                  href=""
+              {% else %}
+                href="{% unless template == "customers/account" %}/account{% endunless %}#customer_orders"
+              {% endif %}
+              >
+                My Orders
+              </a>
+            </li>
+            {% if customer.metafields.subscriptions != blank %}
+              <li class="animation manage_subscription">
+                <a class="no-hover-link" href="/tools/recurring/portal/{{customer.metafields.subscriptions.customer_string}}/schedule/">Manage Subscriptions</a>
+              </li>
+            {% endif %}
+            <li class="animation">
+                <a class="no-hover-link" class="btn" href="/account/logout">Logout</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <script>
+  $(function(){
+    let currentUrl = window.location.pathname.replace('/','')+window.location.hash;
+    console.log(currentUrl);
+    console.log(currentUrl.indexOf('account/orders'));
+    if(currentUrl.indexOf('account/orders') > -1) {
+      currentUrl = 'account/orders';
+    }
+    $('[data-link="'+currentUrl+'"]').addClass('active');
+  
+    $(".my-account-menu .goto .scroll").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if ( $(this).data("hash") !== "" ) {
+  
+          // Store hash
+          var hash = $(this).data("hash");
+          var elHeight = $(hash).offset().top - 90;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: elHeight
+          }, 800, function() {});
+          
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+  
+          return false;
+          } // End if
+    });
+  });
+  </script>

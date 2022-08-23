@@ -1,0 +1,24 @@
+.ea-blog .blog__title {
+    margin-bottom: 5rem;
+}
+
+.ea-blog .card-wrapper {
+    border: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.ea-blog .blog-articles .article-card .card__information, .ea-blog .blog__posts .article-card .card__information {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ea-blog ea-slideshow-component {
+    --desktop-margin-left-first-item: max(5rem, calc((100vw - var(--page-width) + 10rem - var(--grid-desktop-horizontal-spacing)) / 2));
+    position: relative;
+    display: block;
+}
+
+.slider-counter-type--dots .slider-button:disabled {
+    visibility: hidden;
+}

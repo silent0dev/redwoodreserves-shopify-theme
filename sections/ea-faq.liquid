@@ -1,0 +1,184 @@
+{{ 'section-ea-faq.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+    .faq__page--container-{{ section.id }} {
+        padding-top: {{ section.settings.top_p | append: 'rem' }};
+        padding-bottom: {{ section.settings.bot_p | append: 'rem' }};
+        background-color: {{ section.settings.bkg_clr }};
+    }
+
+    @media screen and (max-width: 749px) {
+      .faq__page--container-{{ section.id }} {
+          padding-top: {{ section.settings.top_p | minus: 3 | append: 'rem' }};
+          padding-bottom: {{ section.settings.bot_p | minus: 3 | append: 'rem' }};
+      }
+    }
+{% endstyle %}
+
+<section class="faq__page--container faq__page--container-{{ section.id }} faq__page_wrapper">
+  <div class="grid page-width ">
+    <div class="grid faq__side-grid page-width ">
+      <div class="faq__side-column grid__item">
+        <div class="filter">
+          <div class="filter-header">
+            <h3 class="medium-hide small-hide">By Category</h3>
+          </div>
+            <ul class="tabs vertical">
+                <li class="active" data-href="#all">
+                  <input id="link-all-products" class="visually-hidden" type="radio" name="faqs--accordion" value="all" checked>
+                  <label for="link-all-products" class="label-radio">All</label>
+                </li>
+                {% liquid assign category_handles = '' %}
+                {% for block in section.blocks %}
+                  {% assign category_handle = block.settings.category_name | handleize %}
+                  {% unless category_handles contains category_handle %}
+                    {% assign category_handles = category_handles | append: category_handle | append: ',' %} 
+                    <li data-href="#product-grids-{{ block.settings.category_name | handleize }}">
+                      <input id="link-{{ block.settings.category_name | handleize }}-{{ forloop.index }}" class="visually-hidden" type="radio" name="faqs--accordion" value="{{  block.settings.category_name | handleize }}">
+                      <label for="link-{{ block.settings.category_name | handleize }}-{{ forloop.index }}" class="label-radio">
+                        {{ block.settings.category_name }}
+                      </label>
+                    </li>
+                  {% endunless %}
+                {% endfor %}
+            </ul>
+          </div>
+          <div class="hide-desktop slideshow__swipe_text">
+            {% render 'icon-swipe' %}
+            {{ 'sections.slideshow.swipe_text' | t }}
+          </div>
+      </div>
+      <div class="faq__main-column grid__item">
+        {% if section.settings.heading != blank %}
+        <div class="title-wrapper-with-link title-wrapper--self-padded-tablet-down">
+          <h2 class="title">{{ section.settings.heading }}</h2>
+        </div>      
+        {% endif %}
+        <div role="radiogroup" aria-label="accordion_group">
+          {% assign category_handles = '' %}
+          {% for block in section.blocks %}
+            {% assign category_handle = block.settings.category_name | handleize %}
+            {% unless category_handles contains category_handle %}
+            <div id="product-grids-{{ category_handle }}" class="faq--accordion">
+                {% assign category_handles = category_handles | append: category_handle | append: ',' %} 
+                <h2 class="faq-cat-title">{{ block.settings.category_name }}</h2>
+                <div class="faq__each--accordion">
+                  {% assign current_category = block.settings.category_name %}
+                  {% for block in section.blocks %}
+                    {% if current_category == block.settings.category_name %}
+                      <div class="faq__each--accordion_cnt">
+                        <input id="{{ section.id }}--{{ forloop.index }}--accordion" type="radio" {% if forloop.first %} checked{% endif %} class="visually-hidden" name="{{ template.suffix }}--accordion" role="radio">
+                        <label for="{{ section.id }}--{{ forloop.index }}--accordion">
+                            <div class="summary__title--wrapper">
+                              <h3 class="summary__title">{{ block.settings.title }}</h3>
+                            </div>
+                        </label>
+                        <div class="details__content">
+                          {{ block.settings.answer }}
+                          {% if block.settings.text-list != '' %}
+                            <div class="details__content-ul">{{ block.settings.text-list }}</div>
+                          {% endif %}
+                        </div>
+                      </div>                
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                <summary class="closing__line" aria-label="closing__line"></summary>
+            </div>
+            {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+  let faqItems =  document.querySelectorAll('.faq__each--accordion label');
+  let faqActive =  document.querySelector('input[name="faqs--accordion"]:checked');
+
+  faqItems.forEach( (faqItem) => {
+    faqItem.addEventListener('click', (event) => {
+      console.log('Faq item clicked');
+      faqActive.parentElement.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "EA FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Title",
+      "default": "Frequently asked questions"
+    },
+    {
+      "type": "color",
+      "id": "bkg_clr",
+      "label": "Background Color",
+      "default": "#fff"
+    },
+    {
+      "type": "range",
+      "id": "top_p",
+      "min": 0,
+      "max": 12,
+      "unit": "rem",
+      "label": "Top Padding",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "bot_p",
+      "min": 0,
+      "max": 12,
+      "unit": "rem",
+      "label": "Bottom Padding",
+      "default": 3
+    }
+  ],
+  "blocks": [
+    {
+      "name": "FAQ Item",
+      "type": "faq_item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "category_name",
+          "label": "Category Name"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "label": "Question"
+        },
+        {
+          "id": "answer",
+          "type": "richtext",
+          "label": "Answer"
+        },
+        {
+          "id": "text-list",
+          "type": "richtext",
+          "label": "Answer List"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "ea sections",
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "faq_item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
